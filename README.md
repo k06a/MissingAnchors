@@ -1,6 +1,6 @@
 # MissingAnchors
 
-[![CI Status](http://img.shields.io/travis/k06a/MissingAnchors.svg?style=flat)](https://travis-ci.org/Anton Bukov/MissingAnchors)
+[![CI Status](http://img.shields.io/travis/k06a/MissingAnchors.svg?style=flat)](https://travis-ci.org/k06a/MissingAnchors)
 [![Version](https://img.shields.io/cocoapods/v/MissingAnchors.svg?style=flat)](http://cocoapods.org/pods/MissingAnchors)
 [![License](https://img.shields.io/cocoapods/l/MissingAnchors.svg?style=flat)](http://cocoapods.org/pods/MissingAnchors)
 [![Platform](https://img.shields.io/cocoapods/p/MissingAnchors.svg?style=flat)](http://cocoapods.org/pods/MissingAnchors)
