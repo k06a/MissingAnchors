@@ -3,6 +3,8 @@ Pod::Spec.new do |s|
   s.version          = "0.1.0"
   s.summary          = "Missing Anchors for iOS 9 API"
   s.description      = <<-DESC
+                        Added classes to handle sizeAnchor and edgesAnchor easily.
+                        Also introduced modern pattern to create and activate several constraints.
                        DESC
 
   s.homepage         = "https://github.com/k06a/MissingAnchors"
