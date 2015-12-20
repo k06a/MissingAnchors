@@ -14,5 +14,5 @@ before_install:
 - gem install cocoapods # Since Travis is not always on latest version
 - pod install --project-directory=Example
 script:
-- set -o pipefail && xcodebuild test -workspace Example/MissingAnchors.xcworkspace -scheme MissingAnchors-Example -sdk iphoneos ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" | xcpretty
+- set -o pipefail && xcodebuild test -workspace Example/MissingAnchors.xcworkspace -scheme MissingAnchors-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO CODE_SIGN_IDENTITY="" | xcpretty
 - pod lib lint
