@@ -7,6 +7,4 @@ end
 
 target 'MissingAnchors_Tests', :exclusive => true do
   pod "MissingAnchors", :path => "../"
-
-  
 end

@@ -1,16 +1,14 @@
 //
 //  MissingAnchors.h
-//  Pods
+//  MissingAnchors
 //
-//  Created by Антон Буков on 20.12.15.
+//  Created by Anton Bukov on 20.12.15.
 //
 //
 
 #import <UIKit/UIKit.h>
 
-typedef NSArray<NSLayoutConstraint> NSLayoutConstraints;
-
 #import "UIView+MissingAnchors.h"
 #import "NSArray+MissingAnchors.h"
-#import "ABLayoutSizeDimention.h"
-#import "ABLayoutEdgesDimention.h"
+#import "ABLayoutSizeDimension.h"
+#import "ABLayoutEdgesDimension.h"

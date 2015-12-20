@@ -1,8 +1,8 @@
 //
 //  ABLayoutEdgesDimension.m
-//  Pods
+//  MissingAnchors
 //
-//  Created by Антон Буков on 20.12.15.
+//  Created by Anton Bukov on 20.12.15.
 //
 //
 

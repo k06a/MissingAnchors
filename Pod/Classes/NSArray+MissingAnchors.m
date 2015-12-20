@@ -1,12 +1,10 @@
 //
-//  NSLayoutAnchors.m
-//  Pods
+//  NSArray+MissingAnchors.m
 //
-//  Created by Антон Буков on 20.12.15.
-//
+//  Created by Anton Bukov on 20.12.15.
 //
 
-#import "NSArray+MissingAnchor.h"
+#import "NSArray+MissingAnchors.h"
 
 @implementation NSArray (MissingAnchors)
 
