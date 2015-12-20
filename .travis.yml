@@ -8,6 +8,7 @@ cache:
  directories:
    - /Library/Ruby/Gems/2.0.0
    - ~/Library/Caches/CocoaPods
+   - ~/.cocoapods
    - Pods
 podfile: Example/Podfile
 before_install:
