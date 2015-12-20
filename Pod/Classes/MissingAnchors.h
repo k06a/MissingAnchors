@@ -11,5 +11,6 @@
 typedef NSArray<NSLayoutConstraint> NSLayoutConstraints;
 
 #import "UIView+MissingAnchors.h"
+#import "NSArray+MissingAnchors.h"
 #import "ABLayoutSizeDimention.h"
 #import "ABLayoutEdgesDimention.h"
