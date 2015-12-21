@@ -1,20 +1,20 @@
 //
-//  ABLayoutEdgesDimension.m
+//  ABLayoutEdgesAnchor.m
 //  MissingAnchors
 //
 //  Created by Anton Bukov on 20.12.15.
 //
 //
 
-#import "ABLayoutEdgesDimension.h"
+#import "ABLayoutEdgesAnchor.h"
 
-@interface ABLayoutEdgesDimension ()
+@interface ABLayoutEdgesAnchor ()
 
 @property (weak, nonatomic) UIView *view;
 
 @end
 
-@implementation ABLayoutEdgesDimension
+@implementation ABLayoutEdgesAnchor
 
 - (instancetype)initWithView:(UIView *)view {
     if (self = [super init]) {

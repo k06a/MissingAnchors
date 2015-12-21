@@ -1,5 +1,5 @@
 //
-//  ABLayoutEdgesDimension.h
+//  ABLayoutEdgesAnchor.h
 //  MissingAnchors
 //
 //  Created by Anton Bukov on 20.12.15.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ABLayoutEdgesDimension : NSObject
+@interface ABLayoutEdgesAnchor : NSObject
 
 - (instancetype)initWithView:(UIView *)view;
 

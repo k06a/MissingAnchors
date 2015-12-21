@@ -11,4 +11,4 @@
 #import "UIView+MissingAnchors.h"
 #import "NSArray+MissingAnchors.h"
 #import "ABLayoutSizeDimension.h"
-#import "ABLayoutEdgesDimension.h"
+#import "ABLayoutEdgesAnchor.h"

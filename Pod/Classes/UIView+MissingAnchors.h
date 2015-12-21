@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @class ABLayoutSizeDimension;
-@class ABLayoutEdgesDimension;
+@class ABLayoutEdgesAnchor;
 
 @interface UIView (MissingAnchors)
 
 @property(readonly, strong) ABLayoutSizeDimension *sizeAnchor;
-@property(readonly, strong) ABLayoutEdgesDimension *edgesAnchor;
+@property(readonly, strong) ABLayoutEdgesAnchor *edgesAnchor;
 
 @end

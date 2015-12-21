@@ -19,9 +19,7 @@
 
 - (void)setActive:(BOOL)active {
     for (id object in self) {
-        if ([object respondsToSelector:@selector(setActive:)]) {
-            [object setActive:active];
-        }
+        [object setActive:active];
     }
 }
 
