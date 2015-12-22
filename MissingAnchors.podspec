@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MissingAnchors"
-  s.version          = "0.1.1"
+  s.version          = "0.2.0"
   s.summary          = "Missing Anchors for iOS 9 API"
   s.description      = <<-DESC
                         Added classes to handle sizeAnchor and edgesAnchor easily.

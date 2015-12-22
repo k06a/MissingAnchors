@@ -1,5 +1,5 @@
 PODS:
-  - MissingAnchors (0.1.0)
+  - MissingAnchors (0.1.1)
 
 DEPENDENCIES:
   - MissingAnchors (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MissingAnchors: 42a441313c97cd2fd0d8da7d6fe623890bd98174
+  MissingAnchors: 17e18e4a345287078c2f20977343753c434b7379
 
 COCOAPODS: 0.39.0

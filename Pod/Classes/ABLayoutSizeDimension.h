@@ -10,7 +10,7 @@
 
 @interface ABLayoutSizeDimension : NSObject
 
-- (instancetype)initWithView:(UIView *)view;
+- (instancetype)initWithItem:(UIView *)view;
 
 /* These methods return a pair of inactive constraints of the form
  thisVariable = constant.

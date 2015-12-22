@@ -14,9 +14,10 @@
 
 @end
 
+
 @implementation ABLayoutSizeDimension
 
-- (instancetype)initWithView:(UIView *)view {
+- (instancetype)initWithItem:(UIView *)view {
     if (self = [super init]) {
         self.view = view;
     }

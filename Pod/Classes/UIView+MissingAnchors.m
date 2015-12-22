@@ -8,16 +8,17 @@
 
 #import "ABLayoutSizeDimension.h"
 #import "ABLayoutEdgesAnchor.h"
+#import "ABLayoutEdgesAnchor_Private.h"
 #import "UIView+MissingAnchors.h"
 
 @implementation UIView (MissingAnchors)
 
 - (ABLayoutSizeDimension *)sizeAnchor {
-    return [[ABLayoutSizeDimension alloc] initWithView:self];
+    return [[ABLayoutSizeDimension alloc] initWithItem:self];
 }
 
 - (ABLayoutEdgesAnchor *)edgesAnchor {
-    return [[ABLayoutEdgesAnchor alloc] initWithView:self];
+    return [[ABLayoutEdgesAnchor alloc] initWithItem:self];
 }
 
 @end
