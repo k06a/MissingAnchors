@@ -34,6 +34,11 @@ imageView2.translatesAutoresizingMaskIntoConstraints = NO;
   [imageView2.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-30],
   [imageView2.rightAnchor constraintEqualToAnchor:self.view.rightAnchor constant:-40]].active = YES;
 ```
+Some examples:
+```
+[view.edgesAnchor.withoutTopAnchor constraintsEqualToConstant:UIEdgeInsetsMake(0, 20, 30, 40)].active = YES;
+[view.topAnchor.withBottomAnchor constraintsEqualToConstant:UIEdgeInsetsMake(10, 0, 30, 0)].active = YES;
+```
 
 ## Requirements
 
