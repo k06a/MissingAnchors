@@ -9,37 +9,41 @@ Backport of Apple NSLayoutAnchor API to iOS7 and some missings like `sizeAnchor`
 
 ## Usage
 
-Right now you are able to use following anchors:
+###Backported all default anchor methods:
+- `view.leadingAnchor`
+- `view.trailingAnchor`
+- `view.leftAnchor`
+- `view.rightAnchor`
+- `view.topAnchor`
+- `view.bottomAnchor`
+- `view.widthAnchor`
+- `view.heightAnchor`
+- `view.centerXAnchor`
+- `view.centerYAnchor`
+- `view.firstBaselineAnchor`
+- `view.lastBaselineAnchor`
+
+###Additional implemented anchors:
 - `view.sizeAnchor`
 - `view.edgesAnchor`
 
-Just use like this (with `edgesAnchor`):
+Use them as usual:
 ```objective-c
 #import <MissingAnchor/MissingAnchor.h>
 ...
-UIImageView *imageView1 = [[UIImageView alloc] init];
-[self.view addSubview:imageView1];
-imageView1.translatesAutoresizingMaskIntoConstraints = NO;
-
-[imageView1.edgesAnchor constraintsEqualToConstant:UIEdgeInsetsMake(10, 20, 30, 40)].active = YES;
+[view1.edgesAnchor constraintsEqualToConstant:UIEdgeInsetsMake(10, 20, 30, 40)].active = YES;
+[view2.topAnchor.withBottomAnchor constraintsEqualToConstant:UIEdgeInsetsMake(10, 0, 30, 0)].active = YES;
+[view3.edgesAnchor.withoutTopAnchor constraintsEqualToConstant:UIEdgeInsetsMake(0, 20, 30, 40)].active = YES;
 ```
-Or like this (with `NSArray` setting `active`):
+
+###Modern active property:
 ```objective-c
 #import <MissingAnchor/MissingAnchor.h>
 ...
-UIImageView *imageView2 = [[UIImageView alloc] init];
-[self.view addSubview:imageView2];
-imageView2.translatesAutoresizingMaskIntoConstraints = NO;
-
-@[[imageView2.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:10],
-  [imageView2.leftAnchor constraintEqualToAnchor:self.view.leftAnchor constant:20],
-  [imageView2.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-30],
-  [imageView2.rightAnchor constraintEqualToAnchor:self.view.rightAnchor constant:-40]].active = YES;
-```
-Some examples:
-```
-[view.edgesAnchor.withoutTopAnchor constraintsEqualToConstant:UIEdgeInsetsMake(0, 20, 30, 40)].active = YES;
-[view.topAnchor.withBottomAnchor constraintsEqualToConstant:UIEdgeInsetsMake(10, 0, 30, 0)].active = YES;
+@[[view1.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:10],
+  [view1.leftAnchor constraintEqualToAnchor:self.view.leftAnchor constant:20],
+  [view1.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-30],
+  [view1.rightAnchor constraintEqualToAnchor:self.view.rightAnchor constant:-40]].active = YES;
 ```
 
 ## Requirements
