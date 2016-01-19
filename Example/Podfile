@@ -3,8 +3,10 @@ use_frameworks!
 
 target 'MissingAnchors_Example', :exclusive => true do
   pod "MissingAnchors", :path => "../"
+  pod "MissingAnchors/NSLayoutAnchor", :path => "../"
 end
 
 target 'MissingAnchors_Tests', :exclusive => true do
   pod "MissingAnchors", :path => "../"
+  pod "MissingAnchors/NSLayoutAnchor", :path => "../"
 end

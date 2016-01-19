@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/MissingAnchors.svg?style=flat)](http://cocoapods.org/pods/MissingAnchors)
 [![Platform](https://img.shields.io/cocoapods/p/MissingAnchors.svg?style=flat)](http://cocoapods.org/pods/MissingAnchors)
 
+Backport of Apple NSLayoutAnchor API to iOS7 and some missings like `sizeAnchor` and `edgesAnchor`.
+
 ## Usage
 
 Right now you are able to use following anchors:
@@ -49,6 +51,7 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'MissingAnchors'
+pod 'MissingAnchors/NSLayoutAnchor' # if you need a backport of NSLayoutAnchor to iOS 7
 ```
 
 ## Author

@@ -1,10 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = "MissingAnchors"
-  s.version          = "0.2.0"
-  s.summary          = "Missing Anchors for iOS 9 API"
+  s.version          = "0.3.0"
+  s.summary          = "Backport of Apple NSLayoutAnchor API to iOS7 and some missings like `sizeAnchor` and `edgesAnchor`"
   s.description      = <<-DESC
-                        Added classes to handle sizeAnchor and edgesAnchor easily.
-                        Also introduced modern pattern to create and activate several constraints.
+                        Backport of Apple NSLayoutAnchor API to iOS7 and some missings
+                        like `sizeAnchor` and `edgesAnchor`. Also introduced modern
+                        pattern to create and activate several constraints.
                        DESC
 
   s.homepage         = "https://github.com/k06a/MissingAnchors"
@@ -13,12 +14,20 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/k06a/MissingAnchors.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/k06a'
 
-  s.platform     = :ios, '9.0'
+  s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.public_header_files = 'Pod/Classes/*.{h}'
-  s.resource_bundles = {
-    'MissingAnchors' => ['Pod/Assets/*.png']
-  }
+  s.subspec 'MissingAnchors' do |ss|
+    ss.source_files = 'Pod/Classes/*'
+    ss.public_header_files = 'Pod/Classes/*.{h}'
+    ss.header_mappings_dir = 'Pod/Classes'
+  end
+
+  s.subspec 'NSLayoutAnchor' do |ss|
+    ss.source_files = "Pod/Classes/ABLayoutAnchor/*"
+    ss.public_header_files = 'Pod/Classes/ABLayoutAnchor/*.{h}'
+    ss.header_mappings_dir = 'Pod/Classes/ABLayoutAnchor'
+  end
+
+  s.default_subspec = 'MissingAnchors'
 end
