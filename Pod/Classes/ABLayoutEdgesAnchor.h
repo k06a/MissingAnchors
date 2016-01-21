@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 typedef NS_OPTIONS(NSUInteger, ABLayoutEdgesAttribute) {
     ABLayoutEdgesAttributeTop      = 1 << 0,
     ABLayoutEdgesAttributeBottom   = 1 << 1,
@@ -39,3 +41,5 @@ typedef NS_OPTIONS(NSUInteger, ABLayoutEdgesAttribute) {
 - (NSArray<NSLayoutConstraint *> *)constraintsLessThanOrEqualToConstant:(UIEdgeInsets)c;
 
 @end
+
+NS_ASSUME_NONNULL_END

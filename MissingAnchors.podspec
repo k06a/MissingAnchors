@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MissingAnchors"
-  s.version          = "0.3.0"
+  s.version          = "0.4.0"
   s.summary          = "Backport of Apple NSLayoutAnchor API to iOS7 and some missings like `sizeAnchor` and `edgesAnchor`"
   s.description      = <<-DESC
                         Backport of Apple NSLayoutAnchor API to iOS7 and some missings
@@ -20,13 +20,11 @@ Pod::Spec.new do |s|
   s.subspec 'MissingAnchors' do |ss|
     ss.source_files = 'Pod/Classes/*'
     ss.public_header_files = 'Pod/Classes/*.{h}'
-    ss.header_mappings_dir = 'Pod/Classes'
   end
 
   s.subspec 'NSLayoutAnchor' do |ss|
     ss.source_files = "Pod/Classes/ABLayoutAnchor/*"
     ss.public_header_files = 'Pod/Classes/ABLayoutAnchor/*.{h}'
-    ss.header_mappings_dir = 'Pod/Classes/ABLayoutAnchor'
   end
 
   s.default_subspec = 'MissingAnchors'

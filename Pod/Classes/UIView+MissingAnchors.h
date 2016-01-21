@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class ABLayoutSizeDimension;
 @class ABLayoutEdgesAnchor;
 
@@ -17,3 +19,5 @@
 @property(readonly, strong) ABLayoutEdgesAnchor *edgesAnchor;
 
 @end
+
+NS_ASSUME_NONNULL_END

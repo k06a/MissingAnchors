@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ABLayoutSizeDimension : NSObject
+NS_ASSUME_NONNULL_BEGIN
 
-- (instancetype)initWithItem:(UIView *)view;
+@interface ABLayoutSizeDimension : NSObject
 
 /* These methods return a pair of inactive constraints of the form
  thisVariable = constant.
@@ -48,3 +48,5 @@
 - (NSArray<NSLayoutConstraint *> *)constraintsLessThanOrEqualToAnchor:(ABLayoutSizeDimension *)anchor multiplier:(CGSize)m constant:(CGSize)c;
 
 @end
+
+NS_ASSUME_NONNULL_END

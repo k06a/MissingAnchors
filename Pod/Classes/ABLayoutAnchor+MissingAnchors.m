@@ -1,15 +1,17 @@
 //
-//  NSLayoutAnchor+MissingAnchors.m
+//  ABLayoutAnchor+MissingAnchors.m
 //  MissingAnchors
 //
 //  Created by Anton Bukov on 21.12.15.
 //
 //
 
+#if __has_include(<MissingAnchors/ABLayoutAnchor.h>)
+
 #import "ABLayoutEdgesAnchor.h"
 #import "ABLayoutEdgesAnchor_Private.h"
-#import "NSLayoutAnchor_Private.h"
-#import "NSLayoutAnchor+MissingAnchors.h"
+#import "ABLayoutAnchor_Private.h"
+#import "ABLayoutAnchor+MissingAnchors.h"
 
 static ABLayoutEdgesAttribute edgeByAttribute(NSLayoutAttribute attribute) {
     static NSDictionary<NSNumber *,NSNumber *> *dict;
@@ -29,7 +31,7 @@ static ABLayoutEdgesAttribute edgeByAttribute(NSLayoutAttribute attribute) {
 
 //
 
-@implementation NSLayoutAnchor (MissingAnchors)
+@implementation ABLayoutAnchor (MissingAnchors)
 
 - (ABLayoutEdgesAnchor *)withTopAnchor {
     ABLayoutEdgesAttribute edges = edgeByAttribute(self.attribute) | ABLayoutEdgesAttributeTop;
@@ -52,3 +54,5 @@ static ABLayoutEdgesAttribute edgeByAttribute(NSLayoutAttribute attribute) {
 }
 
 @end
+
+#endif

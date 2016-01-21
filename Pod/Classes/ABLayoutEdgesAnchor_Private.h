@@ -6,11 +6,18 @@
 //
 //
 
-#import <MissingAnchors/MissingAnchors.h>
+#import "ABLayoutEdgesAnchor.h"
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface ABLayoutEdgesAnchor (Private)
+
+@property (strong, nonatomic) UIView *item;
+@property (assign, nonatomic) NSLayoutAttribute attribute;
 
 - (instancetype)initWithItem:(UIView *)view;
 - (instancetype)initWithItem:(UIView *)view attribute:(ABLayoutEdgesAttribute)attribute;
 
 @end
+
+NS_ASSUME_NONNULL_END

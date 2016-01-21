@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class ABLayoutXAxisAnchor,ABLayoutYAxisAnchor,ABLayoutDimension;
+NS_ASSUME_NONNULL_BEGIN
+
+@class ABLayoutXAxisAnchor;
+@class ABLayoutYAxisAnchor;
+@class ABLayoutDimension;
+
 @interface UIView (ABLayoutAnchor)
 
 /* Constraint creation conveniences. See ABLayoutAnchor.h for details.
@@ -27,3 +32,5 @@
 @property (readonly, strong) ABLayoutYAxisAnchor *lastBaselineAnchor;
 
 @end
+
+NS_ASSUME_NONNULL_END

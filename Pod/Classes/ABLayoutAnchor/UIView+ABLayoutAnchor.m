@@ -7,6 +7,7 @@
 //
 
 #import "ABLayoutAnchor.h"
+#import "ABLayoutAnchor_Private.h"
 #import "UIView+ABLayoutAnchor.h"
 
 @implementation UIView (ABLayoutAnchor)

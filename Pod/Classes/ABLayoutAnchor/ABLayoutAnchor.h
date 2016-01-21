@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@class NSLayoutConstraint, ABLayoutAnchor;
+NS_ASSUME_NONNULL_BEGIN
+
+@class NSLayoutConstraint;
+@class ABLayoutAnchor;
 
 /* An ABLayoutAnchor represents an edge or dimension of a layout item.  Its concrete
  subclasses allow concise creation of constraints.
@@ -25,8 +28,6 @@
  */
 @interface ABLayoutAnchor<AnchorType> : NSObject
 
-- (instancetype)initWithItem:(UIView *)item attribute:(NSLayoutAttribute)attr;
-
 /* These methods return an inactive constraint of the form thisAnchor = otherAnchor.
  */
 - (NSLayoutConstraint *)constraintEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor;
@@ -38,14 +39,18 @@
 - (NSLayoutConstraint *)constraintEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor constant:(CGFloat)c;
 - (NSLayoutConstraint *)constraintGreaterThanOrEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor constant:(CGFloat)c;
 - (NSLayoutConstraint *)constraintLessThanOrEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor constant:(CGFloat)c;
+
 @end
 
 
 /* Axis-specific subclasses for location anchors: top/bottom, leading/trailing, baseline, etc.
  */
-@class ABLayoutXAxisAnchor, ABLayoutYAxisAnchor;
+@class ABLayoutXAxisAnchor;
+@class ABLayoutYAxisAnchor;
+
 @interface ABLayoutXAxisAnchor : ABLayoutAnchor<ABLayoutXAxisAnchor *>
 @end
+
 @interface ABLayoutYAxisAnchor : ABLayoutAnchor<ABLayoutYAxisAnchor *>
 @end
 
@@ -53,6 +58,7 @@
 /* This layout anchor subclass is used for sizes (width & height).
  */
 @class ABLayoutDimension;
+
 @interface ABLayoutDimension : ABLayoutAnchor<ABLayoutDimension *>
 
 /* These methods return an inactive constraint of the form
@@ -75,4 +81,7 @@
 - (NSLayoutConstraint *)constraintEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m constant:(CGFloat)c;
 - (NSLayoutConstraint *)constraintGreaterThanOrEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m constant:(CGFloat)c;
 - (NSLayoutConstraint *)constraintLessThanOrEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m constant:(CGFloat)c;
+
 @end
+
+NS_ASSUME_NONNULL_END

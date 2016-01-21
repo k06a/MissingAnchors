@@ -7,6 +7,7 @@
 //
 
 #import "ABLayoutSizeDimension.h"
+#import "ABLayoutSizeDimension_Private.h"
 #import "ABLayoutEdgesAnchor.h"
 #import "ABLayoutEdgesAnchor_Private.h"
 #import "UIView+MissingAnchors.h"

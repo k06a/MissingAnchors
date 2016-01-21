@@ -1,18 +1,20 @@
 //
-//  NSLayoutAnchor+MissingAnchors.h
+//  ABLayoutAnchor+MissingAnchors.h
 //  MissingAnchors
 //
 //  Created by Anton Bukov on 21.12.15.
 //
 //
 
-#import <UIKit/UIKit.h>
+#if __has_include(<MissingAnchors/ABLayoutAnchor.h>)
+
+#import "ABLayoutAnchor.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @class ABLayoutEdgesAnchor;
 
-@interface NSLayoutAnchor (MissingAnchors)
+@interface ABLayoutAnchor (MissingAnchors)
 
 @property (readonly, nonatomic) ABLayoutEdgesAnchor *withTopAnchor;
 @property (readonly, nonatomic) ABLayoutEdgesAnchor *withBottomAnchor;
@@ -22,3 +24,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif
