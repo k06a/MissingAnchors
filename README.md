@@ -27,7 +27,18 @@ Backport of Apple NSLayoutAnchor API to iOS7 and some missings like `sizeAnchor`
 - `view.sizeAnchor`
 - `view.edgesAnchor`
 
-Use them as usual:
+With some additional methods on anchors:
+
+- `anchor.withTopAnchor`
+- `anchor.withBottomAnchor`
+- `anchor.withLeadingAnchor`
+- `anchor.withTrailingAnchor`
+- `edgesAnchor.withoutTopAnchor`
+- `edgesAnchor.withoutBottomAnchor`
+- `edgesAnchor.withoutLeadingAnchor`
+- `edgesAnchor.withoutTrailingAnchor`
+
+Usage example:
 ```objective-c
 #import <MissingAnchor/MissingAnchor.h>
 ...
