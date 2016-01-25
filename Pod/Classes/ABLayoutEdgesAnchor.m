@@ -70,40 +70,47 @@
     return [[ABLayoutEdgesAnchor alloc] initWithItem:self.item attribute:edges];
 }
 
-+ (NSArray *)arrayWithoutNulls:(NSArray *)arr {
-    return [arr filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nonnull evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
-        return evaluatedObject != [NSNull null];
-    }]];
-}
-
 /* These methods return an array of inactive constraints of the form
  thisVariable = constant.
  */
 - (NSArray<NSLayoutConstraint *> *)constraintsEqualToConstant:(UIEdgeInsets)c {
-    return [self.class arrayWithoutNulls:@[
+    [self assertSuperviewNotNil];
+    return arrayWithoutNulls(@[
         (self.attribute & ABLayoutEdgesAttributeTop) ? [self.item.topAnchor constraintEqualToAnchor:self.item.superview.topAnchor constant:c.top] : [NSNull null],
         (self.attribute & ABLayoutEdgesAttributeBottom) ? [self.item.bottomAnchor constraintEqualToAnchor:self.item.superview.bottomAnchor constant:-c.bottom] : [NSNull null],
         (self.attribute & ABLayoutEdgesAttributeLeading) ? [self.item.leadingAnchor constraintEqualToAnchor:self.item.superview.leadingAnchor constant:c.left] : [NSNull null],
         (self.attribute & ABLayoutEdgesAttributeTrailing) ? [self.item.trailingAnchor constraintEqualToAnchor:self.item.superview.trailingAnchor constant:-c.right] : [NSNull null],
-    ]];
+    ]);
 }
 
 - (NSArray<NSLayoutConstraint *> *)constraintsGreaterThanOrEqualToConstant:(UIEdgeInsets)c {
-    return [self.class arrayWithoutNulls:@[
+    [self assertSuperviewNotNil];
+    return arrayWithoutNulls(@[
         (self.attribute & ABLayoutEdgesAttributeTop) ? [self.item.topAnchor constraintGreaterThanOrEqualToAnchor:self.item.superview.topAnchor constant:c.top] : [NSNull null],
         (self.attribute & ABLayoutEdgesAttributeBottom) ? [self.item.bottomAnchor constraintLessThanOrEqualToAnchor:self.item.superview.bottomAnchor constant:-c.bottom] : [NSNull null],
         (self.attribute & ABLayoutEdgesAttributeLeading) ? [self.item.leadingAnchor constraintGreaterThanOrEqualToAnchor:self.item.superview.leadingAnchor constant:c.left] : [NSNull null],
         (self.attribute & ABLayoutEdgesAttributeTrailing) ? [self.item.trailingAnchor constraintLessThanOrEqualToAnchor:self.item.superview.trailingAnchor constant:-c.right] : [NSNull null],
-    ]];
+    ]);
 }
 
 - (NSArray<NSLayoutConstraint *> *)constraintsLessThanOrEqualToConstant:(UIEdgeInsets)c {
-    return [self.class arrayWithoutNulls:@[
+    [self assertSuperviewNotNil];
+    return arrayWithoutNulls(@[
         (self.attribute & ABLayoutEdgesAttributeTop) ? [self.item.topAnchor constraintLessThanOrEqualToAnchor:self.item.superview.topAnchor constant:c.top] : [NSNull null],
         (self.attribute & ABLayoutEdgesAttributeBottom) ? [self.item.bottomAnchor constraintGreaterThanOrEqualToAnchor:self.item.superview.bottomAnchor constant:-c.bottom] : [NSNull null],
         (self.attribute & ABLayoutEdgesAttributeLeading) ? [self.item.leadingAnchor constraintLessThanOrEqualToAnchor:self.item.superview.leadingAnchor constant:c.left] : [NSNull null],
         (self.attribute & ABLayoutEdgesAttributeTrailing) ? [self.item.trailingAnchor constraintGreaterThanOrEqualToAnchor:self.item.superview.trailingAnchor constant:-c.right] : [NSNull null],
-    ]];
+    ]);
+}
+
+- (void)assertSuperviewNotNil {
+    NSAssert(self.item.superview, @"View's superview must not be nil.\nView: %@", self.item);
+}
+
+static NSArray *arrayWithoutNulls(NSArray *arr) {
+    return [arr filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(id  _Nonnull evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
+        return evaluatedObject != [NSNull null];
+    }]];
 }
 
 @end
