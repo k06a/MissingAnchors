@@ -12,6 +12,7 @@
 #import "NSArray+MissingAnchors.h"
 #import "ABLayoutSizeDimension.h"
 #import "ABLayoutEdgesAnchor.h"
+#import "NSLayoutAnchor+MissingAnchors.h"
 
 #if __has_include(<MissingAnchors/ABLayoutAnchor.h>)
 
