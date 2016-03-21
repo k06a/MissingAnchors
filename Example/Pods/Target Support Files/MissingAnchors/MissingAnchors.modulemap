@@ -1,0 +1,6 @@
+framework module MissingAnchors {
+  umbrella header "MissingAnchors-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -2,9 +2,9 @@
 
 [![CI Status](http://img.shields.io/travis/k06a/MissingAnchors.svg?style=flat)](https://travis-ci.org/k06a/MissingAnchors)
 [![Version](https://img.shields.io/cocoapods/v/MissingAnchors.svg?style=flat)](http://cocoapods.org/pods/MissingAnchors)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](https://img.shields.io/cocoapods/l/MissingAnchors.svg?style=flat)](http://cocoapods.org/pods/MissingAnchors)
 [![Platform](https://img.shields.io/cocoapods/p/MissingAnchors.svg?style=flat)](http://cocoapods.org/pods/MissingAnchors)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Backport of Apple NSLayoutAnchor API to iOS7 and some missings like `sizeAnchor` and `edgesAnchor`.
 
@@ -68,6 +68,12 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'MissingAnchors'
 pod 'MissingAnchors/NSLayoutAnchor' # if you need a backport of NSLayoutAnchor to iOS 7
+```
+
+Or, if you’re using [Carthage](https://github.com/Carthage/Carthage), simply add MissingAnchors to your `Cartfile`:
+
+```
+github "k06a/MissingAnchors"
 ```
 
 ## Author

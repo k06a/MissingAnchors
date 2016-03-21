@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0141E2199332A23667B18EDA615284C2 /* ABLayoutEdgesAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1387A05B4DD33B816BCF8AE571F86CDB /* ABLayoutEdgesAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2438E490C7DC85DFA7076A7178272AA0 /* NSLayoutAnchor+MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A6F65F54B796D135FADA2543A62A7AF /* NSLayoutAnchor+MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29B3F7AF6FD1FEB9E0093530CC0E179C /* Pods-MissingAnchors_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE238D90DD9E532D0FFCA544154EC91 /* Pods-MissingAnchors_Example-dummy.m */; };
+		2A5A8D4AA991077E346112FD5A1E5AB2 /* UIView+ABLayoutAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = D0189B72678FF6637A9E846917AF2F38 /* UIView+ABLayoutAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ED77929C7691EC2FF26C1DA46814983 /* ABLayoutSizeDimension.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA28AEF70B68A479EE17848FB17F49 /* ABLayoutSizeDimension.m */; };
+		310AA16D5819BEF12C4743171DF6BE87 /* Pods-MissingAnchors_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0618840C23ED1DE01629FEA4CA73C427 /* Pods-MissingAnchors_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3126E815513D4E56181DE52A73200832 /* ABLayoutAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C8E45AE3329F232C15122FA20AEEB59 /* ABLayoutAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		39A00626A97681306248123369145E59 /* UIView+MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = 264520733EBFF1C0FA4A53EA7C8DFB8B /* UIView+MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CA15DBA3C2C1F3B0F6861B622D8BCE4 /* MissingAnchors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1C2FA98D5ADD3CF38235F428400578 /* MissingAnchors-dummy.m */; };
+		4149112E5B82250631C52753D16FA26A /* Pods-MissingAnchors_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5717680CF63B87A7B08AE134ADCE980D /* Pods-MissingAnchors_Tests-dummy.m */; };
+		48B328BEB2BADB6CCE42484A9B89927D /* NSArray+MissingAnchors.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C5CDE6E2A7BF78809AB9506291A24 /* NSArray+MissingAnchors.m */; };
+		4DC3E07AFF50E7CE9D602FE82546328E /* ABLayoutSizeDimension_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2293864AC475215B4D06324DDA0A8C75 /* ABLayoutSizeDimension_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DF761A0BAEAD39ACA1F29C5FA3635BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		5BEE7AF160544CDA136339AE46A064B1 /* ABLayoutAnchor.m in Sources */ = {isa = PBXBuildFile; fileRef = E286C2FDF84D9C54B377779ED642810B /* ABLayoutAnchor.m */; };
+		5CBAAE4A5C56FA4B52C4C10B50CD2EAD /* ABLayoutEdgesAnchor.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A13525D71E928141ECAF7F53BB487D /* ABLayoutEdgesAnchor.m */; };
+		68D0E5764373C45A321EEF9260CE154D /* UIView+MissingAnchors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9797F8247953A4374EE38E141DD5D328 /* UIView+MissingAnchors.m */; };
+		727B69009B9EE632490A2C6E2655BE81 /* NSLayoutAnchor_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C7530D663B107830857D892FF5A78860 /* NSLayoutAnchor_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		816F5D25828168B381F9389925D173D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		828FE6CB9DCC18872CED81C20971796D /* ABLayoutAnchor+MissingAnchors.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C41E7B7490B9C26D34DA9447E8F72E5 /* ABLayoutAnchor+MissingAnchors.m */; };
+		8AB40FB558D13FCB5A3DD572F8F92E72 /* MissingAnchors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45BFAA4F54098F40713145AE7E552094 /* MissingAnchors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B35B5FE203415EAC6ABC398736E3AC7 /* NSArray+MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = 631F653B2FC64E7ACF60455E6EBA8261 /* NSArray+MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B780B8389089C158DE89C24712636F9 /* MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9D1333FB7CF2C921F2C70B1D09D8CF /* MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEB127EBDF4996B1B30F68C8EF28AEDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		E4ED824D14226981AB08379902A06865 /* ABLayoutAnchor+MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = F42F4661D28CA1895F34F2C13B2B9A2F /* ABLayoutAnchor+MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E543A6DFB9DE139377815E92A9B0A80A /* UIView+ABLayoutAnchor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D25BCF3802026EC04B37A14C4C25A /* UIView+ABLayoutAnchor.m */; };
+		E96A1175FCD2260F8171BB53A7854600 /* NSLayoutAnchor+MissingAnchors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4309132959BB79EB12B8D98EBE460 /* NSLayoutAnchor+MissingAnchors.m */; };
+		F234D134ABC4CF366172776819746D47 /* Pods-MissingAnchors_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E546156C1D24D37D6B0CBF98E6EB4DB /* Pods-MissingAnchors_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F69AD32FA3DE23BC105923C5A0F8260A /* ABLayoutSizeDimension.h in Headers */ = {isa = PBXBuildFile; fileRef = 697192D46BD225502B81DF7C793A9C23 /* ABLayoutSizeDimension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F6DD2704F1027FE84F5DA1B5D8883785 /* ABLayoutEdgesAnchor_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C0EA0A62C005AD88F331F4B41F982738 /* ABLayoutEdgesAnchor_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD8244975A19DAA6961A8CA8E3295444 /* ABLayoutAnchor_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F1332A12D9E4BE0720F1387B7D46A5DA /* ABLayoutAnchor_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7F45C715A5B310885626C71E6A12488 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E342BD72431EAC4CB4BAB12060679A84;
+			remoteInfo = MissingAnchors;
+		};
+		B1172385E9A02A51A55AEC9769BA2B94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E342BD72431EAC4CB4BAB12060679A84;
+			remoteInfo = MissingAnchors;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0618840C23ED1DE01629FEA4CA73C427 /* Pods-MissingAnchors_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MissingAnchors_Tests-umbrella.h"; sourceTree = "<group>"; };
+		09A005626ADC06D85DC34B15ABB5DEF3 /* Pods-MissingAnchors_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MissingAnchors_Example-resources.sh"; sourceTree = "<group>"; };
+		1387A05B4DD33B816BCF8AE571F86CDB /* ABLayoutEdgesAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutEdgesAnchor.h; sourceTree = "<group>"; };
+		1485E8AE3D7B4CA01C61E5F7A6CFDD08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14F37833DE34C68E6135ABA0051C33A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A9D1333FB7CF2C921F2C70B1D09D8CF /* MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MissingAnchors.h; sourceTree = "<group>"; };
+		2293864AC475215B4D06324DDA0A8C75 /* ABLayoutSizeDimension_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutSizeDimension_Private.h; sourceTree = "<group>"; };
+		264520733EBFF1C0FA4A53EA7C8DFB8B /* UIView+MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+MissingAnchors.h"; sourceTree = "<group>"; };
+		2B5F2CEC8154DFE1CA4C46C50995C814 /* Pods-MissingAnchors_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MissingAnchors_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2E0D25BCF3802026EC04B37A14C4C25A /* UIView+ABLayoutAnchor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ABLayoutAnchor.m"; sourceTree = "<group>"; };
+		2EB6815FAEAF04287F7FD60060B6DF1B /* Pods-MissingAnchors_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MissingAnchors_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2EE238D90DD9E532D0FFCA544154EC91 /* Pods-MissingAnchors_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MissingAnchors_Example-dummy.m"; sourceTree = "<group>"; };
+		2F8B59B496177E852ADD7DC3C3C48376 /* MissingAnchors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MissingAnchors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3E546156C1D24D37D6B0CBF98E6EB4DB /* Pods-MissingAnchors_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MissingAnchors_Example-umbrella.h"; sourceTree = "<group>"; };
+		45BFAA4F54098F40713145AE7E552094 /* MissingAnchors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MissingAnchors-umbrella.h"; sourceTree = "<group>"; };
+		461AB8446149B5A18D9724870D1188BB /* MissingAnchors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MissingAnchors-prefix.pch"; sourceTree = "<group>"; };
+		4C828BADBFECCD54300BB3083CAB85F7 /* Pods-MissingAnchors_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MissingAnchors_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CC4309132959BB79EB12B8D98EBE460 /* NSLayoutAnchor+MissingAnchors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutAnchor+MissingAnchors.m"; sourceTree = "<group>"; };
+		5297F0C9D2CD0E3CD6C798E355BE1BB4 /* Pods-MissingAnchors_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MissingAnchors_Example.modulemap"; sourceTree = "<group>"; };
+		5717680CF63B87A7B08AE134ADCE980D /* Pods-MissingAnchors_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MissingAnchors_Tests-dummy.m"; sourceTree = "<group>"; };
+		5A6F65F54B796D135FADA2543A62A7AF /* NSLayoutAnchor+MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSLayoutAnchor+MissingAnchors.h"; sourceTree = "<group>"; };
+		631F653B2FC64E7ACF60455E6EBA8261 /* NSArray+MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+MissingAnchors.h"; sourceTree = "<group>"; };
+		66BE1B4EFA6B8F4C3B14C541EEB1C71D /* Pods-MissingAnchors_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MissingAnchors_Tests.modulemap"; sourceTree = "<group>"; };
+		697192D46BD225502B81DF7C793A9C23 /* ABLayoutSizeDimension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutSizeDimension.h; sourceTree = "<group>"; };
+		6C8E45AE3329F232C15122FA20AEEB59 /* ABLayoutAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutAnchor.h; sourceTree = "<group>"; };
+		75859B408E2B9440A8CCCB005E5A728A /* MissingAnchors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MissingAnchors.modulemap; sourceTree = "<group>"; };
+		77A8CC7514DC1DC3F7BEADE7AE2CA8CC /* Pods-MissingAnchors_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MissingAnchors_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		7923FE17754A3E12708BD0CC9ADF979E /* Pods-MissingAnchors_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MissingAnchors_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		849356874E723B79118156438DC8FD41 /* Pods_MissingAnchors_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MissingAnchors_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E81AC3D4FB1A73884BAAEE28A13C58 /* Pods-MissingAnchors_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MissingAnchors_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8C41E7B7490B9C26D34DA9447E8F72E5 /* ABLayoutAnchor+MissingAnchors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ABLayoutAnchor+MissingAnchors.m"; sourceTree = "<group>"; };
+		95A13525D71E928141ECAF7F53BB487D /* ABLayoutEdgesAnchor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ABLayoutEdgesAnchor.m; sourceTree = "<group>"; };
+		964BE992421EC36353BB8407BB9BC0B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9797F8247953A4374EE38E141DD5D328 /* UIView+MissingAnchors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+MissingAnchors.m"; sourceTree = "<group>"; };
+		9DC981D685CFE03813C6BCF84C76EEBA /* Pods-MissingAnchors_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MissingAnchors_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		A07243456F38FAE17EB77E53D5985910 /* Pods-MissingAnchors_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MissingAnchors_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ABCA74FF2329760862C1EE7DCAE771EB /* Pods-MissingAnchors_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MissingAnchors_Tests-resources.sh"; sourceTree = "<group>"; };
+		ABFA28AEF70B68A479EE17848FB17F49 /* ABLayoutSizeDimension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ABLayoutSizeDimension.m; sourceTree = "<group>"; };
+		B2FB9838FB36F9C6DEAE8CCAFD0026FD /* Pods-MissingAnchors_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MissingAnchors_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC1C2FA98D5ADD3CF38235F428400578 /* MissingAnchors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MissingAnchors-dummy.m"; sourceTree = "<group>"; };
+		BF2C5CDE6E2A7BF78809AB9506291A24 /* NSArray+MissingAnchors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MissingAnchors.m"; sourceTree = "<group>"; };
+		C0EA0A62C005AD88F331F4B41F982738 /* ABLayoutEdgesAnchor_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutEdgesAnchor_Private.h; sourceTree = "<group>"; };
+		C7530D663B107830857D892FF5A78860 /* NSLayoutAnchor_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSLayoutAnchor_Private.h; sourceTree = "<group>"; };
+		D0189B72678FF6637A9E846917AF2F38 /* UIView+ABLayoutAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ABLayoutAnchor.h"; sourceTree = "<group>"; };
+		DF888197D5D8A108C7E3B8C938849F37 /* Pods-MissingAnchors_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MissingAnchors_Example-frameworks.sh"; sourceTree = "<group>"; };
+		DFF0E99B5F4F1920727BC9AD92BFFA44 /* Pods_MissingAnchors_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MissingAnchors_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E286C2FDF84D9C54B377779ED642810B /* ABLayoutAnchor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ABLayoutAnchor.m; sourceTree = "<group>"; };
+		F1332A12D9E4BE0720F1387B7D46A5DA /* ABLayoutAnchor_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutAnchor_Private.h; sourceTree = "<group>"; };
+		F42F4661D28CA1895F34F2C13B2B9A2F /* ABLayoutAnchor+MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ABLayoutAnchor+MissingAnchors.h"; sourceTree = "<group>"; };
+		F507CFCDE851CE60F19C65596DA9F3E7 /* MissingAnchors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MissingAnchors.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21EAE68F572952DEF537B8C94A706426 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB127EBDF4996B1B30F68C8EF28AEDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AC231ED4998297E39E62831B91F136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF761A0BAEAD39ACA1F29C5FA3635BF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5C55945D32B0D46DBDEF863F4E2D5FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816F5D25828168B381F9389925D173D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		190D16F627441C7E3533A9307728096B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F42F4661D28CA1895F34F2C13B2B9A2F /* ABLayoutAnchor+MissingAnchors.h */,
+				8C41E7B7490B9C26D34DA9447E8F72E5 /* ABLayoutAnchor+MissingAnchors.m */,
+				1387A05B4DD33B816BCF8AE571F86CDB /* ABLayoutEdgesAnchor.h */,
+				95A13525D71E928141ECAF7F53BB487D /* ABLayoutEdgesAnchor.m */,
+				C0EA0A62C005AD88F331F4B41F982738 /* ABLayoutEdgesAnchor_Private.h */,
+				697192D46BD225502B81DF7C793A9C23 /* ABLayoutSizeDimension.h */,
+				ABFA28AEF70B68A479EE17848FB17F49 /* ABLayoutSizeDimension.m */,
+				2293864AC475215B4D06324DDA0A8C75 /* ABLayoutSizeDimension_Private.h */,
+				1A9D1333FB7CF2C921F2C70B1D09D8CF /* MissingAnchors.h */,
+				631F653B2FC64E7ACF60455E6EBA8261 /* NSArray+MissingAnchors.h */,
+				BF2C5CDE6E2A7BF78809AB9506291A24 /* NSArray+MissingAnchors.m */,
+				5A6F65F54B796D135FADA2543A62A7AF /* NSLayoutAnchor+MissingAnchors.h */,
+				4CC4309132959BB79EB12B8D98EBE460 /* NSLayoutAnchor+MissingAnchors.m */,
+				C7530D663B107830857D892FF5A78860 /* NSLayoutAnchor_Private.h */,
+				264520733EBFF1C0FA4A53EA7C8DFB8B /* UIView+MissingAnchors.h */,
+				9797F8247953A4374EE38E141DD5D328 /* UIView+MissingAnchors.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1F2CD207BA2AC79DE3DAF6E2E601913C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9C24BBF3DF6247458B50699B704DD5CF /* ABLayoutAnchor */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		59DF24D34A2E0582EF6A2B6B9AE1273C /* NSLayoutAnchor */ = {
+			isa = PBXGroup;
+			children = (
+				9B53CF294ACCE021AC24631F2CB712AF /* Pod */,
+			);
+			name = NSLayoutAnchor;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				EF95DED402DEE278CF98AEE02A3CC98F /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				EDF17E6585E5074108DA331F4B20EC76 /* Products */,
+				C982E608BD31BF07C76325D35C00A7E3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7F4D4EC8F5B79AB6033A1591EE446A9C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				190D16F627441C7E3533A9307728096B /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		9B53CF294ACCE021AC24631F2CB712AF /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1F2CD207BA2AC79DE3DAF6E2E601913C /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		9C24BBF3DF6247458B50699B704DD5CF /* ABLayoutAnchor */ = {
+			isa = PBXGroup;
+			children = (
+				6C8E45AE3329F232C15122FA20AEEB59 /* ABLayoutAnchor.h */,
+				E286C2FDF84D9C54B377779ED642810B /* ABLayoutAnchor.m */,
+				F1332A12D9E4BE0720F1387B7D46A5DA /* ABLayoutAnchor_Private.h */,
+				D0189B72678FF6637A9E846917AF2F38 /* UIView+ABLayoutAnchor.h */,
+				2E0D25BCF3802026EC04B37A14C4C25A /* UIView+ABLayoutAnchor.m */,
+			);
+			path = ABLayoutAnchor;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C1C2D4747A6611768192E052E10B46B9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14F37833DE34C68E6135ABA0051C33A4 /* Info.plist */,
+				75859B408E2B9440A8CCCB005E5A728A /* MissingAnchors.modulemap */,
+				F507CFCDE851CE60F19C65596DA9F3E7 /* MissingAnchors.xcconfig */,
+				BC1C2FA98D5ADD3CF38235F428400578 /* MissingAnchors-dummy.m */,
+				461AB8446149B5A18D9724870D1188BB /* MissingAnchors-prefix.pch */,
+				45BFAA4F54098F40713145AE7E552094 /* MissingAnchors-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MissingAnchors";
+			sourceTree = "<group>";
+		};
+		C982E608BD31BF07C76325D35C00A7E3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7CDDBA5FF69B70C9DF0E0208F78C65B /* Pods-MissingAnchors_Example */,
+				E73E75DA9BF16705CF28FAF96F6B8C22 /* Pods-MissingAnchors_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D5E8452F5FF79ABF70110C1F95C2899C /* MissingAnchors */ = {
+			isa = PBXGroup;
+			children = (
+				7F4D4EC8F5B79AB6033A1591EE446A9C /* Pod */,
+			);
+			name = MissingAnchors;
+			sourceTree = "<group>";
+		};
+		D7CDDBA5FF69B70C9DF0E0208F78C65B /* Pods-MissingAnchors_Example */ = {
+			isa = PBXGroup;
+			children = (
+				1485E8AE3D7B4CA01C61E5F7A6CFDD08 /* Info.plist */,
+				5297F0C9D2CD0E3CD6C798E355BE1BB4 /* Pods-MissingAnchors_Example.modulemap */,
+				87E81AC3D4FB1A73884BAAEE28A13C58 /* Pods-MissingAnchors_Example-acknowledgements.markdown */,
+				77A8CC7514DC1DC3F7BEADE7AE2CA8CC /* Pods-MissingAnchors_Example-acknowledgements.plist */,
+				2EE238D90DD9E532D0FFCA544154EC91 /* Pods-MissingAnchors_Example-dummy.m */,
+				DF888197D5D8A108C7E3B8C938849F37 /* Pods-MissingAnchors_Example-frameworks.sh */,
+				09A005626ADC06D85DC34B15ABB5DEF3 /* Pods-MissingAnchors_Example-resources.sh */,
+				3E546156C1D24D37D6B0CBF98E6EB4DB /* Pods-MissingAnchors_Example-umbrella.h */,
+				2EB6815FAEAF04287F7FD60060B6DF1B /* Pods-MissingAnchors_Example.debug.xcconfig */,
+				2B5F2CEC8154DFE1CA4C46C50995C814 /* Pods-MissingAnchors_Example.release.xcconfig */,
+			);
+			name = "Pods-MissingAnchors_Example";
+			path = "Target Support Files/Pods-MissingAnchors_Example";
+			sourceTree = "<group>";
+		};
+		E73E75DA9BF16705CF28FAF96F6B8C22 /* Pods-MissingAnchors_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				964BE992421EC36353BB8407BB9BC0B5 /* Info.plist */,
+				66BE1B4EFA6B8F4C3B14C541EEB1C71D /* Pods-MissingAnchors_Tests.modulemap */,
+				A07243456F38FAE17EB77E53D5985910 /* Pods-MissingAnchors_Tests-acknowledgements.markdown */,
+				B2FB9838FB36F9C6DEAE8CCAFD0026FD /* Pods-MissingAnchors_Tests-acknowledgements.plist */,
+				5717680CF63B87A7B08AE134ADCE980D /* Pods-MissingAnchors_Tests-dummy.m */,
+				9DC981D685CFE03813C6BCF84C76EEBA /* Pods-MissingAnchors_Tests-frameworks.sh */,
+				ABCA74FF2329760862C1EE7DCAE771EB /* Pods-MissingAnchors_Tests-resources.sh */,
+				0618840C23ED1DE01629FEA4CA73C427 /* Pods-MissingAnchors_Tests-umbrella.h */,
+				4C828BADBFECCD54300BB3083CAB85F7 /* Pods-MissingAnchors_Tests.debug.xcconfig */,
+				7923FE17754A3E12708BD0CC9ADF979E /* Pods-MissingAnchors_Tests.release.xcconfig */,
+			);
+			name = "Pods-MissingAnchors_Tests";
+			path = "Target Support Files/Pods-MissingAnchors_Tests";
+			sourceTree = "<group>";
+		};
+		EDF17E6585E5074108DA331F4B20EC76 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F8B59B496177E852ADD7DC3C3C48376 /* MissingAnchors.framework */,
+				849356874E723B79118156438DC8FD41 /* Pods_MissingAnchors_Example.framework */,
+				DFF0E99B5F4F1920727BC9AD92BFFA44 /* Pods_MissingAnchors_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF95DED402DEE278CF98AEE02A3CC98F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F76053219C04D0AC1801FCCC8084C188 /* MissingAnchors */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		F76053219C04D0AC1801FCCC8084C188 /* MissingAnchors */ = {
+			isa = PBXGroup;
+			children = (
+				D5E8452F5FF79ABF70110C1F95C2899C /* MissingAnchors */,
+				59DF24D34A2E0582EF6A2B6B9AE1273C /* NSLayoutAnchor */,
+				C1C2D4747A6611768192E052E10B46B9 /* Support Files */,
+			);
+			name = MissingAnchors;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		243CF3090C00F71C46E7533B870AE943 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				310AA16D5819BEF12C4743171DF6BE87 /* Pods-MissingAnchors_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B7A984CF20AE7743771488BC5F27AB3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4ED824D14226981AB08379902A06865 /* ABLayoutAnchor+MissingAnchors.h in Headers */,
+				3126E815513D4E56181DE52A73200832 /* ABLayoutAnchor.h in Headers */,
+				FD8244975A19DAA6961A8CA8E3295444 /* ABLayoutAnchor_Private.h in Headers */,
+				0141E2199332A23667B18EDA615284C2 /* ABLayoutEdgesAnchor.h in Headers */,
+				F6DD2704F1027FE84F5DA1B5D8883785 /* ABLayoutEdgesAnchor_Private.h in Headers */,
+				F69AD32FA3DE23BC105923C5A0F8260A /* ABLayoutSizeDimension.h in Headers */,
+				4DC3E07AFF50E7CE9D602FE82546328E /* ABLayoutSizeDimension_Private.h in Headers */,
+				8AB40FB558D13FCB5A3DD572F8F92E72 /* MissingAnchors-umbrella.h in Headers */,
+				9B780B8389089C158DE89C24712636F9 /* MissingAnchors.h in Headers */,
+				8B35B5FE203415EAC6ABC398736E3AC7 /* NSArray+MissingAnchors.h in Headers */,
+				2438E490C7DC85DFA7076A7178272AA0 /* NSLayoutAnchor+MissingAnchors.h in Headers */,
+				727B69009B9EE632490A2C6E2655BE81 /* NSLayoutAnchor_Private.h in Headers */,
+				2A5A8D4AA991077E346112FD5A1E5AB2 /* UIView+ABLayoutAnchor.h in Headers */,
+				39A00626A97681306248123369145E59 /* UIView+MissingAnchors.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAB29563BB7379BA4FD0D3D2FCE92F45 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F234D134ABC4CF366172776819746D47 /* Pods-MissingAnchors_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5598C2398EF77CF8808A0AF4D51B7B17 /* Pods-MissingAnchors_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5DBBAE73EC1B8496A0C67EC53672D46 /* Build configuration list for PBXNativeTarget "Pods-MissingAnchors_Tests" */;
+			buildPhases = (
+				B5C9AB3ECA06C4BFD7A9E3EC22A22BB8 /* Sources */,
+				32AC231ED4998297E39E62831B91F136 /* Frameworks */,
+				243CF3090C00F71C46E7533B870AE943 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3FF4839EFFA8DC4F385DAE0398113E0 /* PBXTargetDependency */,
+			);
+			name = "Pods-MissingAnchors_Tests";
+			productName = "Pods-MissingAnchors_Tests";
+			productReference = DFF0E99B5F4F1920727BC9AD92BFFA44 /* Pods_MissingAnchors_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E342BD72431EAC4CB4BAB12060679A84 /* MissingAnchors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF67C650C1C070934E4E3A79DB59C376 /* Build configuration list for PBXNativeTarget "MissingAnchors" */;
+			buildPhases = (
+				6E2963DBB7A31FA832D9251B5CECE3E3 /* Sources */,
+				A5C55945D32B0D46DBDEF863F4E2D5FE /* Frameworks */,
+				5B7A984CF20AE7743771488BC5F27AB3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MissingAnchors;
+			productName = MissingAnchors;
+			productReference = 2F8B59B496177E852ADD7DC3C3C48376 /* MissingAnchors.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FF9B54ADF1DCE337180E9A47CE5BB53F /* Pods-MissingAnchors_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F085076D3F5A837D193DC8F6D96F45B /* Build configuration list for PBXNativeTarget "Pods-MissingAnchors_Example" */;
+			buildPhases = (
+				3B1E9CCC84A6A19C9937B3A2C5D3F066 /* Sources */,
+				21EAE68F572952DEF537B8C94A706426 /* Frameworks */,
+				CAB29563BB7379BA4FD0D3D2FCE92F45 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FACAB57B6AE9E9F20074F6C1ABB739D9 /* PBXTargetDependency */,
+			);
+			name = "Pods-MissingAnchors_Example";
+			productName = "Pods-MissingAnchors_Example";
+			productReference = 849356874E723B79118156438DC8FD41 /* Pods_MissingAnchors_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = EDF17E6585E5074108DA331F4B20EC76 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E342BD72431EAC4CB4BAB12060679A84 /* MissingAnchors */,
+				FF9B54ADF1DCE337180E9A47CE5BB53F /* Pods-MissingAnchors_Example */,
+				5598C2398EF77CF8808A0AF4D51B7B17 /* Pods-MissingAnchors_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B1E9CCC84A6A19C9937B3A2C5D3F066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29B3F7AF6FD1FEB9E0093530CC0E179C /* Pods-MissingAnchors_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2963DBB7A31FA832D9251B5CECE3E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828FE6CB9DCC18872CED81C20971796D /* ABLayoutAnchor+MissingAnchors.m in Sources */,
+				5BEE7AF160544CDA136339AE46A064B1 /* ABLayoutAnchor.m in Sources */,
+				5CBAAE4A5C56FA4B52C4C10B50CD2EAD /* ABLayoutEdgesAnchor.m in Sources */,
+				2ED77929C7691EC2FF26C1DA46814983 /* ABLayoutSizeDimension.m in Sources */,
+				3CA15DBA3C2C1F3B0F6861B622D8BCE4 /* MissingAnchors-dummy.m in Sources */,
+				48B328BEB2BADB6CCE42484A9B89927D /* NSArray+MissingAnchors.m in Sources */,
+				E96A1175FCD2260F8171BB53A7854600 /* NSLayoutAnchor+MissingAnchors.m in Sources */,
+				E543A6DFB9DE139377815E92A9B0A80A /* UIView+ABLayoutAnchor.m in Sources */,
+				68D0E5764373C45A321EEF9260CE154D /* UIView+MissingAnchors.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5C9AB3ECA06C4BFD7A9E3EC22A22BB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4149112E5B82250631C52753D16FA26A /* Pods-MissingAnchors_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3FF4839EFFA8DC4F385DAE0398113E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MissingAnchors;
+			target = E342BD72431EAC4CB4BAB12060679A84 /* MissingAnchors */;
+			targetProxy = B1172385E9A02A51A55AEC9769BA2B94 /* PBXContainerItemProxy */;
+		};
+		FACAB57B6AE9E9F20074F6C1ABB739D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MissingAnchors;
+			target = E342BD72431EAC4CB4BAB12060679A84 /* MissingAnchors */;
+			targetProxy = A7F45C715A5B310885626C71E6A12488 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		04826BA3763958A4491C8BBABF807C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F507CFCDE851CE60F19C65596DA9F3E7 /* MissingAnchors.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MissingAnchors/MissingAnchors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MissingAnchors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MissingAnchors/MissingAnchors.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MissingAnchors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		052A17875CB827423D627183396CEB60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1115E7DC5EAED7B2049A5BD6D9EBCCF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F507CFCDE851CE60F19C65596DA9F3E7 /* MissingAnchors.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MissingAnchors/MissingAnchors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MissingAnchors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MissingAnchors/MissingAnchors.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MissingAnchors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		231178E1187D7FA03C69847246EC81DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C828BADBFECCD54300BB3083CAB85F7 /* Pods-MissingAnchors_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MissingAnchors_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MissingAnchors_Tests/Pods-MissingAnchors_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MissingAnchors_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B9EC8D8CAD53D5EA112DCE4CB256A7E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7923FE17754A3E12708BD0CC9ADF979E /* Pods-MissingAnchors_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MissingAnchors_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MissingAnchors_Tests/Pods-MissingAnchors_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MissingAnchors_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D233AD13AF151C81C72D3E38A506038E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EB6815FAEAF04287F7FD60060B6DF1B /* Pods-MissingAnchors_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MissingAnchors_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MissingAnchors_Example/Pods-MissingAnchors_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MissingAnchors_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1413D5A16E236D035A2B145C512571F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B5F2CEC8154DFE1CA4C46C50995C814 /* Pods-MissingAnchors_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MissingAnchors_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MissingAnchors_Example/Pods-MissingAnchors_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MissingAnchors_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F085076D3F5A837D193DC8F6D96F45B /* Build configuration list for PBXNativeTarget "Pods-MissingAnchors_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D233AD13AF151C81C72D3E38A506038E /* Debug */,
+				F1413D5A16E236D035A2B145C512571F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */,
+				052A17875CB827423D627183396CEB60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF67C650C1C070934E4E3A79DB59C376 /* Build configuration list for PBXNativeTarget "MissingAnchors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04826BA3763958A4491C8BBABF807C3D /* Debug */,
+				1115E7DC5EAED7B2049A5BD6D9EBCCF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5DBBAE73EC1B8496A0C67EC53672D46 /* Build configuration list for PBXNativeTarget "Pods-MissingAnchors_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				231178E1187D7FA03C69847246EC81DB /* Debug */,
+				B9EC8D8CAD53D5EA112DCE4CB256A7E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
