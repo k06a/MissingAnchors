@@ -7,36 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0141E2199332A23667B18EDA615284C2 /* ABLayoutEdgesAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1387A05B4DD33B816BCF8AE571F86CDB /* ABLayoutEdgesAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2438E490C7DC85DFA7076A7178272AA0 /* NSLayoutAnchor+MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A6F65F54B796D135FADA2543A62A7AF /* NSLayoutAnchor+MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		07648C651206C45607966D34A0968461 /* MissingAnchors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1C2FA98D5ADD3CF38235F428400578 /* MissingAnchors-dummy.m */; };
+		141CE23B8D38F404E1CCFB0BEDD8E7F9 /* ABLayoutEdgesAnchor_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C70FED9A2E15C83A0439536837E75C3D /* ABLayoutEdgesAnchor_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1507AD07FFD7BDB95348864D23B1A8DD /* ABLayoutAnchor_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F1332A12D9E4BE0720F1387B7D46A5DA /* ABLayoutAnchor_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F7C8FC477FF2880660A3C2B8D7E496 /* NSLayoutAnchor_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = E998440A2FC176B29C81463D2FDA3C6B /* NSLayoutAnchor_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		25211A68A92220E4AF327EAA0339F707 /* Pods-MissingAnchors_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E546156C1D24D37D6B0CBF98E6EB4DB /* Pods-MissingAnchors_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		291DC5603046BA5B52FE88C08394365B /* Pods-MissingAnchors_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE238D90DD9E532D0FFCA544154EC91 /* Pods-MissingAnchors_Example-dummy.m */; };
-		2A5A8D4AA991077E346112FD5A1E5AB2 /* UIView+ABLayoutAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = D0189B72678FF6637A9E846917AF2F38 /* UIView+ABLayoutAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2ED77929C7691EC2FF26C1DA46814983 /* ABLayoutSizeDimension.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFA28AEF70B68A479EE17848FB17F49 /* ABLayoutSizeDimension.m */; };
-		3126E815513D4E56181DE52A73200832 /* ABLayoutAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C8E45AE3329F232C15122FA20AEEB59 /* ABLayoutAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		39A00626A97681306248123369145E59 /* UIView+MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = 264520733EBFF1C0FA4A53EA7C8DFB8B /* UIView+MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3CA15DBA3C2C1F3B0F6861B622D8BCE4 /* MissingAnchors-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BC1C2FA98D5ADD3CF38235F428400578 /* MissingAnchors-dummy.m */; };
-		48B328BEB2BADB6CCE42484A9B89927D /* NSArray+MissingAnchors.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C5CDE6E2A7BF78809AB9506291A24 /* NSArray+MissingAnchors.m */; };
-		4DC3E07AFF50E7CE9D602FE82546328E /* ABLayoutSizeDimension_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2293864AC475215B4D06324DDA0A8C75 /* ABLayoutSizeDimension_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		375D534E081F1742E5EA13489748F67C /* ABLayoutSizeDimension_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = D22D1E01367FD4ECBC468C16B4FBF886 /* ABLayoutSizeDimension_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C3BD508DDA8E12ABA43F33285F2653B /* NSArray+MissingAnchors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CCC6BE051C1052E90E293E46800CDED /* NSArray+MissingAnchors.m */; };
+		4C0BC95D1D8E1286A4FF2FED75A42380 /* ABLayoutAnchor+MissingAnchors.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B770CDCBCA0A64C027778AD828060C /* ABLayoutAnchor+MissingAnchors.m */; };
+		4C52E44F80E8BD91FCEBA4C74D4A2F12 /* UIView+MissingAnchors.m in Sources */ = {isa = PBXBuildFile; fileRef = 8107F7B1634382144C0631D7692FF526 /* UIView+MissingAnchors.m */; };
 		50406D3C0B114E5E19F594CC8F29E02E /* Pods-MissingAnchors_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0618840C23ED1DE01629FEA4CA73C427 /* Pods-MissingAnchors_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		53502A7A414B9F48AB665F05ED5CB9CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		56F7DD5332AB8DE2A8CE724F61B23075 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		5BEE7AF160544CDA136339AE46A064B1 /* ABLayoutAnchor.m in Sources */ = {isa = PBXBuildFile; fileRef = E286C2FDF84D9C54B377779ED642810B /* ABLayoutAnchor.m */; };
-		5CBAAE4A5C56FA4B52C4C10B50CD2EAD /* ABLayoutEdgesAnchor.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A13525D71E928141ECAF7F53BB487D /* ABLayoutEdgesAnchor.m */; };
-		68D0E5764373C45A321EEF9260CE154D /* UIView+MissingAnchors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9797F8247953A4374EE38E141DD5D328 /* UIView+MissingAnchors.m */; };
-		727B69009B9EE632490A2C6E2655BE81 /* NSLayoutAnchor_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C7530D663B107830857D892FF5A78860 /* NSLayoutAnchor_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		828FE6CB9DCC18872CED81C20971796D /* ABLayoutAnchor+MissingAnchors.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C41E7B7490B9C26D34DA9447E8F72E5 /* ABLayoutAnchor+MissingAnchors.m */; };
-		8AB40FB558D13FCB5A3DD572F8F92E72 /* MissingAnchors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45BFAA4F54098F40713145AE7E552094 /* MissingAnchors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B35B5FE203415EAC6ABC398736E3AC7 /* NSArray+MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = 631F653B2FC64E7ACF60455E6EBA8261 /* NSArray+MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9B780B8389089C158DE89C24712636F9 /* MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9D1333FB7CF2C921F2C70B1D09D8CF /* MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A2B3F7073678E103A13C9B73B2CA96B /* NSLayoutAnchor_Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C7D19F6FE61F6E619801237B280B683 /* NSLayoutAnchor_Private.m */; };
+		5C50C7F27A0FB2FAB9BE02E9CEB17E1B /* ABLayoutAnchor+MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = F0F7C28F02521A945703AA4DBEFD0874 /* ABLayoutAnchor+MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F6DC115C70158720027E59163B96A44 /* ABLayoutAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C8E45AE3329F232C15122FA20AEEB59 /* ABLayoutAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80F756E1314B718E8B5EFABF3DAA6999 /* ABLayoutSizeDimension.m in Sources */ = {isa = PBXBuildFile; fileRef = BD9E54D2048D04AE5F33FB5EAE34D7BA /* ABLayoutSizeDimension.m */; };
+		83DB7253C9C9355A30033631EA9DA8AC /* NSLayoutAnchor+MissingAnchors.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA74291F14D0FFAA56C71B0391698D0 /* NSLayoutAnchor+MissingAnchors.m */; };
+		93DC53A2AF523875A6BB58CD1A6C6CF4 /* ABLayoutAnchor.m in Sources */ = {isa = PBXBuildFile; fileRef = E286C2FDF84D9C54B377779ED642810B /* ABLayoutAnchor.m */; };
+		A892884104F6EC511767B92449EF17E1 /* ABLayoutSizeDimension.h in Headers */ = {isa = PBXBuildFile; fileRef = E1E3F1EF2A07BC9F68B7397926436F8C /* ABLayoutSizeDimension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD638162D03D986ACF89E19A3AB599D7 /* UIView+ABLayoutAnchor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D25BCF3802026EC04B37A14C4C25A /* UIView+ABLayoutAnchor.m */; };
 		B38EF40CC0279DED84E85FAD6EEC9332 /* Pods-MissingAnchors_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5717680CF63B87A7B08AE134ADCE980D /* Pods-MissingAnchors_Tests-dummy.m */; };
-		E4ED824D14226981AB08379902A06865 /* ABLayoutAnchor+MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = F42F4661D28CA1895F34F2C13B2B9A2F /* ABLayoutAnchor+MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E543A6DFB9DE139377815E92A9B0A80A /* UIView+ABLayoutAnchor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0D25BCF3802026EC04B37A14C4C25A /* UIView+ABLayoutAnchor.m */; };
-		E96A1175FCD2260F8171BB53A7854600 /* NSLayoutAnchor+MissingAnchors.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CC4309132959BB79EB12B8D98EBE460 /* NSLayoutAnchor+MissingAnchors.m */; };
-		F69AD32FA3DE23BC105923C5A0F8260A /* ABLayoutSizeDimension.h in Headers */ = {isa = PBXBuildFile; fileRef = 697192D46BD225502B81DF7C793A9C23 /* ABLayoutSizeDimension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F6DD2704F1027FE84F5DA1B5D8883785 /* ABLayoutEdgesAnchor_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C0EA0A62C005AD88F331F4B41F982738 /* ABLayoutEdgesAnchor_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5C85D9210BC804614A876FBC134066B /* ABLayoutEdgesAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F761A28E0B7AAA7792AD97C09B8285 /* ABLayoutEdgesAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B642C6684B5AD92C7007B2A9AFA9CB7A /* ABLayoutEdgesAnchor.m in Sources */ = {isa = PBXBuildFile; fileRef = 319F4811F46780E5FA0FC70E3146998F /* ABLayoutEdgesAnchor.m */; };
+		CA3494864EEA8D3078E71AE38457ECCE /* MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = 97602BFD1D16AA45C604FA45F751CDD3 /* MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CECD10D907E8B8851F16C813CDBF38E4 /* NSLayoutAnchor+MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = EF7EBD6E9A96AF417D0CEF7A9E54DF12 /* NSLayoutAnchor+MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E1280B6D154E058532C01EEE02A3495F /* UIView+ABLayoutAnchor.h in Headers */ = {isa = PBXBuildFile; fileRef = D0189B72678FF6637A9E846917AF2F38 /* UIView+ABLayoutAnchor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E531112C5D6D695C78483C2292EFE485 /* MissingAnchors-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45BFAA4F54098F40713145AE7E552094 /* MissingAnchors-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E84C27D03B190C1FEA4F50C3DAED3F9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		EFBDA5C409D718C3F22CAC2D3F8EC297 /* UIView+MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = 10BBCE75A75B4F7B8B511C6268D30225 /* UIView+MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4EA166D1BE611A26FD3A135567ADCC5 /* NSArray+MissingAnchors.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B9FD29E47B2377A449669FAB4BF854F /* NSArray+MissingAnchors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCBCD435882AA0E1C4FB7F4BDE85D433 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		FD8244975A19DAA6961A8CA8E3295444 /* ABLayoutAnchor_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = F1332A12D9E4BE0720F1387B7D46A5DA /* ABLayoutAnchor_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,14 +45,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E342BD72431EAC4CB4BAB12060679A84;
+			remoteGlobalIDString = 7FF8183227925045060FEC5141089826;
 			remoteInfo = MissingAnchors;
 		};
 		E1DB30F4D658BAAAAFDD1DF163511AE6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E342BD72431EAC4CB4BAB12060679A84;
+			remoteGlobalIDString = 7FF8183227925045060FEC5141089826;
 			remoteInfo = MissingAnchors;
 		};
 /* End PBXContainerItemProxy section */
@@ -59,55 +60,56 @@
 /* Begin PBXFileReference section */
 		0618840C23ED1DE01629FEA4CA73C427 /* Pods-MissingAnchors_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MissingAnchors_Tests-umbrella.h"; sourceTree = "<group>"; };
 		09A005626ADC06D85DC34B15ABB5DEF3 /* Pods-MissingAnchors_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MissingAnchors_Example-resources.sh"; sourceTree = "<group>"; };
-		1387A05B4DD33B816BCF8AE571F86CDB /* ABLayoutEdgesAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutEdgesAnchor.h; sourceTree = "<group>"; };
+		10BBCE75A75B4F7B8B511C6268D30225 /* UIView+MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+MissingAnchors.h"; sourceTree = "<group>"; };
 		1485E8AE3D7B4CA01C61E5F7A6CFDD08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14F37833DE34C68E6135ABA0051C33A4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1A9D1333FB7CF2C921F2C70B1D09D8CF /* MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MissingAnchors.h; sourceTree = "<group>"; };
-		2293864AC475215B4D06324DDA0A8C75 /* ABLayoutSizeDimension_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutSizeDimension_Private.h; sourceTree = "<group>"; };
-		264520733EBFF1C0FA4A53EA7C8DFB8B /* UIView+MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+MissingAnchors.h"; sourceTree = "<group>"; };
+		1CCC6BE051C1052E90E293E46800CDED /* NSArray+MissingAnchors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MissingAnchors.m"; sourceTree = "<group>"; };
 		2B5F2CEC8154DFE1CA4C46C50995C814 /* Pods-MissingAnchors_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MissingAnchors_Example.release.xcconfig"; sourceTree = "<group>"; };
 		2E0D25BCF3802026EC04B37A14C4C25A /* UIView+ABLayoutAnchor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+ABLayoutAnchor.m"; sourceTree = "<group>"; };
 		2EB6815FAEAF04287F7FD60060B6DF1B /* Pods-MissingAnchors_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MissingAnchors_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2EE238D90DD9E532D0FFCA544154EC91 /* Pods-MissingAnchors_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MissingAnchors_Example-dummy.m"; sourceTree = "<group>"; };
+		319F4811F46780E5FA0FC70E3146998F /* ABLayoutEdgesAnchor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ABLayoutEdgesAnchor.m; sourceTree = "<group>"; };
 		3E546156C1D24D37D6B0CBF98E6EB4DB /* Pods-MissingAnchors_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MissingAnchors_Example-umbrella.h"; sourceTree = "<group>"; };
 		45BFAA4F54098F40713145AE7E552094 /* MissingAnchors-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MissingAnchors-umbrella.h"; sourceTree = "<group>"; };
 		461AB8446149B5A18D9724870D1188BB /* MissingAnchors-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MissingAnchors-prefix.pch"; sourceTree = "<group>"; };
 		4C828BADBFECCD54300BB3083CAB85F7 /* Pods-MissingAnchors_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MissingAnchors_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4CC4309132959BB79EB12B8D98EBE460 /* NSLayoutAnchor+MissingAnchors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutAnchor+MissingAnchors.m"; sourceTree = "<group>"; };
 		5297F0C9D2CD0E3CD6C798E355BE1BB4 /* Pods-MissingAnchors_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MissingAnchors_Example.modulemap"; sourceTree = "<group>"; };
 		5717680CF63B87A7B08AE134ADCE980D /* Pods-MissingAnchors_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MissingAnchors_Tests-dummy.m"; sourceTree = "<group>"; };
-		5A6F65F54B796D135FADA2543A62A7AF /* NSLayoutAnchor+MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSLayoutAnchor+MissingAnchors.h"; sourceTree = "<group>"; };
-		631F653B2FC64E7ACF60455E6EBA8261 /* NSArray+MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+MissingAnchors.h"; sourceTree = "<group>"; };
+		5C7D19F6FE61F6E619801237B280B683 /* NSLayoutAnchor_Private.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NSLayoutAnchor_Private.m; sourceTree = "<group>"; };
 		63F92F7908183373B134E0E9B0F7CB78 /* MissingAnchors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MissingAnchors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		66BE1B4EFA6B8F4C3B14C541EEB1C71D /* Pods-MissingAnchors_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MissingAnchors_Tests.modulemap"; sourceTree = "<group>"; };
-		697192D46BD225502B81DF7C793A9C23 /* ABLayoutSizeDimension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutSizeDimension.h; sourceTree = "<group>"; };
 		6C8E45AE3329F232C15122FA20AEEB59 /* ABLayoutAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutAnchor.h; sourceTree = "<group>"; };
 		75859B408E2B9440A8CCCB005E5A728A /* MissingAnchors.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MissingAnchors.modulemap; sourceTree = "<group>"; };
 		77A8CC7514DC1DC3F7BEADE7AE2CA8CC /* Pods-MissingAnchors_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MissingAnchors_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		7923FE17754A3E12708BD0CC9ADF979E /* Pods-MissingAnchors_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MissingAnchors_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8107F7B1634382144C0631D7692FF526 /* UIView+MissingAnchors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+MissingAnchors.m"; sourceTree = "<group>"; };
 		87E81AC3D4FB1A73884BAAEE28A13C58 /* Pods-MissingAnchors_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MissingAnchors_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8B69E81E9A6A4263C498E257E344885E /* Pods_MissingAnchors_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MissingAnchors_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C41E7B7490B9C26D34DA9447E8F72E5 /* ABLayoutAnchor+MissingAnchors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ABLayoutAnchor+MissingAnchors.m"; sourceTree = "<group>"; };
+		8B9FD29E47B2377A449669FAB4BF854F /* NSArray+MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSArray+MissingAnchors.h"; sourceTree = "<group>"; };
+		92B770CDCBCA0A64C027778AD828060C /* ABLayoutAnchor+MissingAnchors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ABLayoutAnchor+MissingAnchors.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95A13525D71E928141ECAF7F53BB487D /* ABLayoutEdgesAnchor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ABLayoutEdgesAnchor.m; sourceTree = "<group>"; };
 		964BE992421EC36353BB8407BB9BC0B5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9797F8247953A4374EE38E141DD5D328 /* UIView+MissingAnchors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+MissingAnchors.m"; sourceTree = "<group>"; };
+		97602BFD1D16AA45C604FA45F751CDD3 /* MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MissingAnchors.h; sourceTree = "<group>"; };
 		9DC981D685CFE03813C6BCF84C76EEBA /* Pods-MissingAnchors_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MissingAnchors_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		9EA74291F14D0FFAA56C71B0391698D0 /* NSLayoutAnchor+MissingAnchors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutAnchor+MissingAnchors.m"; sourceTree = "<group>"; };
 		A07243456F38FAE17EB77E53D5985910 /* Pods-MissingAnchors_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MissingAnchors_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A5F761A28E0B7AAA7792AD97C09B8285 /* ABLayoutEdgesAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutEdgesAnchor.h; sourceTree = "<group>"; };
 		A98FA41F345E26C7290783003DEE4BF3 /* Pods_MissingAnchors_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MissingAnchors_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABCA74FF2329760862C1EE7DCAE771EB /* Pods-MissingAnchors_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MissingAnchors_Tests-resources.sh"; sourceTree = "<group>"; };
-		ABFA28AEF70B68A479EE17848FB17F49 /* ABLayoutSizeDimension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ABLayoutSizeDimension.m; sourceTree = "<group>"; };
 		B2FB9838FB36F9C6DEAE8CCAFD0026FD /* Pods-MissingAnchors_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MissingAnchors_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BC1C2FA98D5ADD3CF38235F428400578 /* MissingAnchors-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MissingAnchors-dummy.m"; sourceTree = "<group>"; };
-		BF2C5CDE6E2A7BF78809AB9506291A24 /* NSArray+MissingAnchors.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MissingAnchors.m"; sourceTree = "<group>"; };
-		C0EA0A62C005AD88F331F4B41F982738 /* ABLayoutEdgesAnchor_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutEdgesAnchor_Private.h; sourceTree = "<group>"; };
-		C7530D663B107830857D892FF5A78860 /* NSLayoutAnchor_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSLayoutAnchor_Private.h; sourceTree = "<group>"; };
+		BD9E54D2048D04AE5F33FB5EAE34D7BA /* ABLayoutSizeDimension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ABLayoutSizeDimension.m; sourceTree = "<group>"; };
+		C70FED9A2E15C83A0439536837E75C3D /* ABLayoutEdgesAnchor_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutEdgesAnchor_Private.h; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D0189B72678FF6637A9E846917AF2F38 /* UIView+ABLayoutAnchor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+ABLayoutAnchor.h"; sourceTree = "<group>"; };
+		D22D1E01367FD4ECBC468C16B4FBF886 /* ABLayoutSizeDimension_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutSizeDimension_Private.h; sourceTree = "<group>"; };
 		DF888197D5D8A108C7E3B8C938849F37 /* Pods-MissingAnchors_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MissingAnchors_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E1E3F1EF2A07BC9F68B7397926436F8C /* ABLayoutSizeDimension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutSizeDimension.h; sourceTree = "<group>"; };
 		E286C2FDF84D9C54B377779ED642810B /* ABLayoutAnchor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ABLayoutAnchor.m; sourceTree = "<group>"; };
+		E998440A2FC176B29C81463D2FDA3C6B /* NSLayoutAnchor_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSLayoutAnchor_Private.h; sourceTree = "<group>"; };
+		EF7EBD6E9A96AF417D0CEF7A9E54DF12 /* NSLayoutAnchor+MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSLayoutAnchor+MissingAnchors.h"; sourceTree = "<group>"; };
+		F0F7C28F02521A945703AA4DBEFD0874 /* ABLayoutAnchor+MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ABLayoutAnchor+MissingAnchors.h"; sourceTree = "<group>"; };
 		F1332A12D9E4BE0720F1387B7D46A5DA /* ABLayoutAnchor_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ABLayoutAnchor_Private.h; sourceTree = "<group>"; };
-		F42F4661D28CA1895F34F2C13B2B9A2F /* ABLayoutAnchor+MissingAnchors.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ABLayoutAnchor+MissingAnchors.h"; sourceTree = "<group>"; };
 		F507CFCDE851CE60F19C65596DA9F3E7 /* MissingAnchors.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MissingAnchors.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -120,14 +122,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5C55945D32B0D46DBDEF863F4E2D5FE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53502A7A414B9F48AB665F05ED5CB9CC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D9BE32F9B2C142630E03B2CA87125BF6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,32 +130,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE05B19115F686D4F44F5149C212D64D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E84C27D03B190C1FEA4F50C3DAED3F9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		190D16F627441C7E3533A9307728096B /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				F42F4661D28CA1895F34F2C13B2B9A2F /* ABLayoutAnchor+MissingAnchors.h */,
-				8C41E7B7490B9C26D34DA9447E8F72E5 /* ABLayoutAnchor+MissingAnchors.m */,
-				1387A05B4DD33B816BCF8AE571F86CDB /* ABLayoutEdgesAnchor.h */,
-				95A13525D71E928141ECAF7F53BB487D /* ABLayoutEdgesAnchor.m */,
-				C0EA0A62C005AD88F331F4B41F982738 /* ABLayoutEdgesAnchor_Private.h */,
-				697192D46BD225502B81DF7C793A9C23 /* ABLayoutSizeDimension.h */,
-				ABFA28AEF70B68A479EE17848FB17F49 /* ABLayoutSizeDimension.m */,
-				2293864AC475215B4D06324DDA0A8C75 /* ABLayoutSizeDimension_Private.h */,
-				1A9D1333FB7CF2C921F2C70B1D09D8CF /* MissingAnchors.h */,
-				631F653B2FC64E7ACF60455E6EBA8261 /* NSArray+MissingAnchors.h */,
-				BF2C5CDE6E2A7BF78809AB9506291A24 /* NSArray+MissingAnchors.m */,
-				5A6F65F54B796D135FADA2543A62A7AF /* NSLayoutAnchor+MissingAnchors.h */,
-				4CC4309132959BB79EB12B8D98EBE460 /* NSLayoutAnchor+MissingAnchors.m */,
-				C7530D663B107830857D892FF5A78860 /* NSLayoutAnchor_Private.h */,
-				264520733EBFF1C0FA4A53EA7C8DFB8B /* UIView+MissingAnchors.h */,
-				9797F8247953A4374EE38E141DD5D328 /* UIView+MissingAnchors.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		1F2CD207BA2AC79DE3DAF6E2E601913C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +167,30 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		58604D7857E9AF1B610A1684C6BC843E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F0F7C28F02521A945703AA4DBEFD0874 /* ABLayoutAnchor+MissingAnchors.h */,
+				92B770CDCBCA0A64C027778AD828060C /* ABLayoutAnchor+MissingAnchors.m */,
+				A5F761A28E0B7AAA7792AD97C09B8285 /* ABLayoutEdgesAnchor.h */,
+				319F4811F46780E5FA0FC70E3146998F /* ABLayoutEdgesAnchor.m */,
+				C70FED9A2E15C83A0439536837E75C3D /* ABLayoutEdgesAnchor_Private.h */,
+				E1E3F1EF2A07BC9F68B7397926436F8C /* ABLayoutSizeDimension.h */,
+				BD9E54D2048D04AE5F33FB5EAE34D7BA /* ABLayoutSizeDimension.m */,
+				D22D1E01367FD4ECBC468C16B4FBF886 /* ABLayoutSizeDimension_Private.h */,
+				97602BFD1D16AA45C604FA45F751CDD3 /* MissingAnchors.h */,
+				8B9FD29E47B2377A449669FAB4BF854F /* NSArray+MissingAnchors.h */,
+				1CCC6BE051C1052E90E293E46800CDED /* NSArray+MissingAnchors.m */,
+				EF7EBD6E9A96AF417D0CEF7A9E54DF12 /* NSLayoutAnchor+MissingAnchors.h */,
+				9EA74291F14D0FFAA56C71B0391698D0 /* NSLayoutAnchor+MissingAnchors.m */,
+				E998440A2FC176B29C81463D2FDA3C6B /* NSLayoutAnchor_Private.h */,
+				5C7D19F6FE61F6E619801237B280B683 /* NSLayoutAnchor_Private.m */,
+				10BBCE75A75B4F7B8B511C6268D30225 /* UIView+MissingAnchors.h */,
+				8107F7B1634382144C0631D7692FF526 /* UIView+MissingAnchors.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		59DF24D34A2E0582EF6A2B6B9AE1273C /* NSLayoutAnchor */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,14 +208,6 @@
 				21B0D25E69522F501BF5E7522A104F3C /* Products */,
 				C982E608BD31BF07C76325D35C00A7E3 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		7F4D4EC8F5B79AB6033A1591EE446A9C /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				190D16F627441C7E3533A9307728096B /* Classes */,
-			);
-			path = Pod;
 			sourceTree = "<group>";
 		};
 		9B53CF294ACCE021AC24631F2CB712AF /* Pod */ = {
@@ -266,10 +261,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		CC69D97474DEE08614247ADA64DB6F84 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				58604D7857E9AF1B610A1684C6BC843E /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
 		D5E8452F5FF79ABF70110C1F95C2899C /* MissingAnchors */ = {
 			isa = PBXGroup;
 			children = (
-				7F4D4EC8F5B79AB6033A1591EE446A9C /* Pod */,
+				CC69D97474DEE08614247ADA64DB6F84 /* Pod */,
 			);
 			name = MissingAnchors;
 			sourceTree = "<group>";
@@ -340,32 +343,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		24AFBEF7C6B4E7B08AE5B93E7CD62E1D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C50C7F27A0FB2FAB9BE02E9CEB17E1B /* ABLayoutAnchor+MissingAnchors.h in Headers */,
+				6F6DC115C70158720027E59163B96A44 /* ABLayoutAnchor.h in Headers */,
+				1507AD07FFD7BDB95348864D23B1A8DD /* ABLayoutAnchor_Private.h in Headers */,
+				B5C85D9210BC804614A876FBC134066B /* ABLayoutEdgesAnchor.h in Headers */,
+				141CE23B8D38F404E1CCFB0BEDD8E7F9 /* ABLayoutEdgesAnchor_Private.h in Headers */,
+				A892884104F6EC511767B92449EF17E1 /* ABLayoutSizeDimension.h in Headers */,
+				375D534E081F1742E5EA13489748F67C /* ABLayoutSizeDimension_Private.h in Headers */,
+				E531112C5D6D695C78483C2292EFE485 /* MissingAnchors-umbrella.h in Headers */,
+				CA3494864EEA8D3078E71AE38457ECCE /* MissingAnchors.h in Headers */,
+				F4EA166D1BE611A26FD3A135567ADCC5 /* NSArray+MissingAnchors.h in Headers */,
+				CECD10D907E8B8851F16C813CDBF38E4 /* NSLayoutAnchor+MissingAnchors.h in Headers */,
+				22F7C8FC477FF2880660A3C2B8D7E496 /* NSLayoutAnchor_Private.h in Headers */,
+				E1280B6D154E058532C01EEE02A3495F /* UIView+ABLayoutAnchor.h in Headers */,
+				EFBDA5C409D718C3F22CAC2D3F8EC297 /* UIView+MissingAnchors.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		4F709269096F17F2EA60963C24C0E864 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				50406D3C0B114E5E19F594CC8F29E02E /* Pods-MissingAnchors_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B7A984CF20AE7743771488BC5F27AB3 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E4ED824D14226981AB08379902A06865 /* ABLayoutAnchor+MissingAnchors.h in Headers */,
-				3126E815513D4E56181DE52A73200832 /* ABLayoutAnchor.h in Headers */,
-				FD8244975A19DAA6961A8CA8E3295444 /* ABLayoutAnchor_Private.h in Headers */,
-				0141E2199332A23667B18EDA615284C2 /* ABLayoutEdgesAnchor.h in Headers */,
-				F6DD2704F1027FE84F5DA1B5D8883785 /* ABLayoutEdgesAnchor_Private.h in Headers */,
-				F69AD32FA3DE23BC105923C5A0F8260A /* ABLayoutSizeDimension.h in Headers */,
-				4DC3E07AFF50E7CE9D602FE82546328E /* ABLayoutSizeDimension_Private.h in Headers */,
-				8AB40FB558D13FCB5A3DD572F8F92E72 /* MissingAnchors-umbrella.h in Headers */,
-				9B780B8389089C158DE89C24712636F9 /* MissingAnchors.h in Headers */,
-				8B35B5FE203415EAC6ABC398736E3AC7 /* NSArray+MissingAnchors.h in Headers */,
-				2438E490C7DC85DFA7076A7178272AA0 /* NSLayoutAnchor+MissingAnchors.h in Headers */,
-				727B69009B9EE632490A2C6E2655BE81 /* NSLayoutAnchor_Private.h in Headers */,
-				2A5A8D4AA991077E346112FD5A1E5AB2 /* UIView+ABLayoutAnchor.h in Headers */,
-				39A00626A97681306248123369145E59 /* UIView+MissingAnchors.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,13 +411,13 @@
 			productReference = A98FA41F345E26C7290783003DEE4BF3 /* Pods_MissingAnchors_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E342BD72431EAC4CB4BAB12060679A84 /* MissingAnchors */ = {
+		7FF8183227925045060FEC5141089826 /* MissingAnchors */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AF67C650C1C070934E4E3A79DB59C376 /* Build configuration list for PBXNativeTarget "MissingAnchors" */;
+			buildConfigurationList = 26496317D5C89BF2B002DB69C30A9AFF /* Build configuration list for PBXNativeTarget "MissingAnchors" */;
 			buildPhases = (
-				6E2963DBB7A31FA832D9251B5CECE3E3 /* Sources */,
-				A5C55945D32B0D46DBDEF863F4E2D5FE /* Frameworks */,
-				5B7A984CF20AE7743771488BC5F27AB3 /* Headers */,
+				7055F03EDBDF4883249FE1FC3E109E6A /* Sources */,
+				FE05B19115F686D4F44F5149C212D64D /* Frameworks */,
+				24AFBEF7C6B4E7B08AE5B93E7CD62E1D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -446,7 +449,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E342BD72431EAC4CB4BAB12060679A84 /* MissingAnchors */,
+				7FF8183227925045060FEC5141089826 /* MissingAnchors */,
 				385570288AB8E5948851EB6FFB0D03DB /* Pods-MissingAnchors_Example */,
 				4067479649BFF3B5D11AE5C6A94CB392 /* Pods-MissingAnchors_Tests */,
 			);
@@ -462,19 +465,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6E2963DBB7A31FA832D9251B5CECE3E3 /* Sources */ = {
+		7055F03EDBDF4883249FE1FC3E109E6A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				828FE6CB9DCC18872CED81C20971796D /* ABLayoutAnchor+MissingAnchors.m in Sources */,
-				5BEE7AF160544CDA136339AE46A064B1 /* ABLayoutAnchor.m in Sources */,
-				5CBAAE4A5C56FA4B52C4C10B50CD2EAD /* ABLayoutEdgesAnchor.m in Sources */,
-				2ED77929C7691EC2FF26C1DA46814983 /* ABLayoutSizeDimension.m in Sources */,
-				3CA15DBA3C2C1F3B0F6861B622D8BCE4 /* MissingAnchors-dummy.m in Sources */,
-				48B328BEB2BADB6CCE42484A9B89927D /* NSArray+MissingAnchors.m in Sources */,
-				E96A1175FCD2260F8171BB53A7854600 /* NSLayoutAnchor+MissingAnchors.m in Sources */,
-				E543A6DFB9DE139377815E92A9B0A80A /* UIView+ABLayoutAnchor.m in Sources */,
-				68D0E5764373C45A321EEF9260CE154D /* UIView+MissingAnchors.m in Sources */,
+				4C0BC95D1D8E1286A4FF2FED75A42380 /* ABLayoutAnchor+MissingAnchors.m in Sources */,
+				93DC53A2AF523875A6BB58CD1A6C6CF4 /* ABLayoutAnchor.m in Sources */,
+				B642C6684B5AD92C7007B2A9AFA9CB7A /* ABLayoutEdgesAnchor.m in Sources */,
+				80F756E1314B718E8B5EFABF3DAA6999 /* ABLayoutSizeDimension.m in Sources */,
+				07648C651206C45607966D34A0968461 /* MissingAnchors-dummy.m in Sources */,
+				3C3BD508DDA8E12ABA43F33285F2653B /* NSArray+MissingAnchors.m in Sources */,
+				83DB7253C9C9355A30033631EA9DA8AC /* NSLayoutAnchor+MissingAnchors.m in Sources */,
+				5A2B3F7073678E103A13C9B73B2CA96B /* NSLayoutAnchor_Private.m in Sources */,
+				AD638162D03D986ACF89E19A3AB599D7 /* UIView+ABLayoutAnchor.m in Sources */,
+				4C52E44F80E8BD91FCEBA4C74D4A2F12 /* UIView+MissingAnchors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,13 +496,13 @@
 		27C1B8BE1BE7928B44E45FBF72F8DD5A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MissingAnchors;
-			target = E342BD72431EAC4CB4BAB12060679A84 /* MissingAnchors */;
+			target = 7FF8183227925045060FEC5141089826 /* MissingAnchors */;
 			targetProxy = C2868F1EBD2A759A2B2963F082220463 /* PBXContainerItemProxy */;
 		};
 		468937D61974C837FFF9D5F41965299F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MissingAnchors;
-			target = E342BD72431EAC4CB4BAB12060679A84 /* MissingAnchors */;
+			target = 7FF8183227925045060FEC5141089826 /* MissingAnchors */;
 			targetProxy = E1DB30F4D658BAAAAFDD1DF163511AE6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -612,7 +616,7 @@
 			};
 			name = Debug;
 		};
-		6781194B5CEBEE087A57BD1D6E51417A /* Debug */ = {
+		8E822C372F4CACCEB735EDCCCFCA45F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F507CFCDE851CE60F19C65596DA9F3E7 /* MissingAnchors.xcconfig */;
 			buildSettings = {
@@ -640,35 +644,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		918FA66A1AFBD5715E18FFE6E66909C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F507CFCDE851CE60F19C65596DA9F3E7 /* MissingAnchors.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MissingAnchors/MissingAnchors-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MissingAnchors/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MissingAnchors/MissingAnchors.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MissingAnchors;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		AAF678CED40D3499169D10F63CA0719E /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -705,6 +680,35 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E34DEB1E51B5AA5C4FE95D4FE3BC11C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F507CFCDE851CE60F19C65596DA9F3E7 /* MissingAnchors.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MissingAnchors/MissingAnchors-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MissingAnchors/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MissingAnchors/MissingAnchors.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MissingAnchors;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -777,20 +781,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		26496317D5C89BF2B002DB69C30A9AFF /* Build configuration list for PBXNativeTarget "MissingAnchors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E822C372F4CACCEB735EDCCCFCA45F5 /* Debug */,
+				E34DEB1E51B5AA5C4FE95D4FE3BC11C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				47BEF9D903506B003EA5C2B249729489 /* Debug */,
 				AAF678CED40D3499169D10F63CA0719E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AF67C650C1C070934E4E3A79DB59C376 /* Build configuration list for PBXNativeTarget "MissingAnchors" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6781194B5CEBEE087A57BD1D6E51417A /* Debug */,
-				918FA66A1AFBD5715E18FFE6E66909C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
