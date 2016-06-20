@@ -1,12 +1,12 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'MissingAnchors_Example', :exclusive => true do
+target 'MissingAnchors_Example' do
   pod "MissingAnchors", :path => "../"
   pod "MissingAnchors/NSLayoutAnchor", :path => "../"
 end
 
-target 'MissingAnchors_Tests', :exclusive => true do
+target 'MissingAnchors_Tests' do
   pod "MissingAnchors", :path => "../"
   pod "MissingAnchors/NSLayoutAnchor", :path => "../"
 end
