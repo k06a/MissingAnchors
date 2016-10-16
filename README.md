@@ -41,8 +41,10 @@ With some additional methods on anchors:
 
 Usage example:
 ```objective-c
-#import <MissingAnchor/MissingAnchor.h>
+#import <MissingAnchors/MissingAnchors.h>
+
 ...
+
 [view1.edgesAnchor constraintsEqualToConstant:UIEdgeInsetsMake(10, 20, 30, 40)].active = YES;
 [view2.topAnchor.withBottomAnchor constraintsEqualToConstant:UIEdgeInsetsMake(10, 0, 30, 0)].active = YES;
 [view3.edgesAnchor.withoutTopAnchor constraintsEqualToConstant:UIEdgeInsetsMake(0, 20, 30, 40)].active = YES;
@@ -50,12 +52,16 @@ Usage example:
 
 ###Modern active property:
 ```objective-c
-#import <MissingAnchor/MissingAnchor.h>
+#import <MissingAnchors/MissingAnchors.h>
+
 ...
-@[[view1.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:10],
-  [view1.leftAnchor constraintEqualToAnchor:self.view.leftAnchor constant:20],
-  [view1.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-30],
-  [view1.rightAnchor constraintEqualToAnchor:self.view.rightAnchor constant:-40]].active = YES;
+
+@[
+   [view1.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:10],
+   [view1.leftAnchor constraintEqualToAnchor:self.view.leftAnchor constant:20],
+   [view1.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-30],
+   [view1.rightAnchor constraintEqualToAnchor:self.view.rightAnchor constant:-40],
+].active = YES;
 ```
 
 ## Requirements
