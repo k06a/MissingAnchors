@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MissingAnchors"
-  s.version          = "0.4.4"
+  s.version          = "0.4.5"
   s.summary          = "Backport of Apple NSLayoutAnchor API to iOS7 and some missings like `sizeAnchor` and `edgesAnchor`"
   s.description      = <<-DESC
                         Backport of Apple NSLayoutAnchor API to iOS7 and some missings
