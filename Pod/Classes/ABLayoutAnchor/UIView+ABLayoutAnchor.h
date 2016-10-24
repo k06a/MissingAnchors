@@ -18,18 +18,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 /* Constraint creation conveniences. See ABLayoutAnchor.h for details.
  */
-@property (readonly, strong) ABLayoutXAxisAnchor *leadingAnchor;
-@property (readonly, strong) ABLayoutXAxisAnchor *trailingAnchor;
-@property (readonly, strong) ABLayoutXAxisAnchor *leftAnchor;
-@property (readonly, strong) ABLayoutXAxisAnchor *rightAnchor;
-@property (readonly, strong) ABLayoutYAxisAnchor *topAnchor;
-@property (readonly, strong) ABLayoutYAxisAnchor *bottomAnchor;
-@property (readonly, strong) ABLayoutDimension *widthAnchor;
-@property (readonly, strong) ABLayoutDimension *heightAnchor;
-@property (readonly, strong) ABLayoutXAxisAnchor *centerXAnchor;
-@property (readonly, strong) ABLayoutYAxisAnchor *centerYAnchor;
-@property (readonly, strong) ABLayoutYAxisAnchor *firstBaselineAnchor;
-@property (readonly, strong) ABLayoutYAxisAnchor *lastBaselineAnchor;
+@property (readonly, strong) ABLayoutXAxisAnchor *ab_leadingAnchor;
+@property (readonly, strong) ABLayoutXAxisAnchor *ab_trailingAnchor;
+@property (readonly, strong) ABLayoutXAxisAnchor *ab_leftAnchor;
+@property (readonly, strong) ABLayoutXAxisAnchor *ab_rightAnchor;
+@property (readonly, strong) ABLayoutYAxisAnchor *ab_topAnchor;
+@property (readonly, strong) ABLayoutYAxisAnchor *ab_bottomAnchor;
+@property (readonly, strong) ABLayoutDimension *ab_widthAnchor;
+@property (readonly, strong) ABLayoutDimension *ab_heightAnchor;
+@property (readonly, strong) ABLayoutXAxisAnchor *ab_centerXAnchor;
+@property (readonly, strong) ABLayoutYAxisAnchor *ab_centerYAnchor;
+@property (readonly, strong) ABLayoutYAxisAnchor *ab_firstBaselineAnchor;
+@property (readonly, strong) ABLayoutYAxisAnchor *ab_lastBaselineAnchor;
 
 @end
 

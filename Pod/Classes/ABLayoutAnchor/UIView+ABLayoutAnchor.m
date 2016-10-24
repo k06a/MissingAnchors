@@ -6,57 +6,87 @@
 //
 //
 
+#import <objc/runtime.h>
+
 #import "ABLayoutAnchor.h"
 #import "ABLayoutAnchor_Private.h"
 #import "UIView+ABLayoutAnchor.h"
 
 @implementation UIView (ABLayoutAnchor)
 
-- (ABLayoutXAxisAnchor *)leadingAnchor {
++ (void)load {
+    if (![UIView instanceMethodForSelector:@selector(topAnchor)]) {
+        SEL selectors[] = {
+            @selector(ab_leadingAnchor),
+            @selector(ab_trailingAnchor),
+            @selector(ab_leftAnchor),
+            @selector(ab_rightAnchor),
+            @selector(ab_topAnchor),
+            @selector(ab_bottomAnchor),
+            @selector(ab_widthAnchor),
+            @selector(ab_heightAnchor),
+            @selector(ab_centerXAnchor),
+            @selector(ab_centerYAnchor),
+            @selector(ab_firstBaselineAnchor),
+            @selector(ab_lastBaselineAnchor),
+        };
+        
+        for (NSUInteger i = 0; i < sizeof(selectors)/sizeof(selectors[0]); i++) {
+            SEL selector = selectors[i];
+            SEL newSelector = NSSelectorFromString([NSStringFromSelector(selector) substringFromIndex:3]);
+            Method method = class_getInstanceMethod(self, selector);
+            IMP imp = method_getImplementation(method);
+            const char *types = method_getTypeEncoding(method);
+            class_addMethod(self, newSelector, imp, types);
+        }
+    }
+}
+
+- (ABLayoutXAxisAnchor *)ab_leadingAnchor {
     return [[ABLayoutXAxisAnchor alloc] initWithItem:self attribute:NSLayoutAttributeLeading];
 }
 
-- (ABLayoutXAxisAnchor *)trailingAnchor {
+- (ABLayoutXAxisAnchor *)ab_trailingAnchor {
     return [[ABLayoutXAxisAnchor alloc] initWithItem:self attribute:NSLayoutAttributeTrailing];
 }
 
-- (ABLayoutXAxisAnchor *)leftAnchor {
+- (ABLayoutXAxisAnchor *)ab_leftAnchor {
     return [[ABLayoutXAxisAnchor alloc] initWithItem:self attribute:NSLayoutAttributeLeft];
 }
 
-- (ABLayoutXAxisAnchor *)rightAnchor {
+- (ABLayoutXAxisAnchor *)ab_rightAnchor {
     return [[ABLayoutXAxisAnchor alloc] initWithItem:self attribute:NSLayoutAttributeRight];
 }
 
-- (ABLayoutYAxisAnchor *)topAnchor {
+- (ABLayoutYAxisAnchor *)ab_topAnchor {
     return [[ABLayoutYAxisAnchor alloc] initWithItem:self attribute:NSLayoutAttributeTop];
 }
 
-- (ABLayoutYAxisAnchor *)bottomAnchor {
+- (ABLayoutYAxisAnchor *)ab_bottomAnchor {
     return [[ABLayoutYAxisAnchor alloc] initWithItem:self attribute:NSLayoutAttributeBottom];
 }
 
-- (ABLayoutDimension *)widthAnchor {
+- (ABLayoutDimension *)ab_widthAnchor {
     return [[ABLayoutDimension alloc] initWithItem:self attribute:NSLayoutAttributeWidth];
 }
 
-- (ABLayoutDimension *)heightAnchor {
+- (ABLayoutDimension *)ab_heightAnchor {
     return [[ABLayoutDimension alloc] initWithItem:self attribute:NSLayoutAttributeHeight];
 }
 
-- (ABLayoutXAxisAnchor *)centerXAnchor {
+- (ABLayoutXAxisAnchor *)ab_centerXAnchor {
     return [[ABLayoutXAxisAnchor alloc] initWithItem:self attribute:NSLayoutAttributeCenterX];
 }
 
-- (ABLayoutYAxisAnchor *)centerYAnchor {
+- (ABLayoutYAxisAnchor *)ab_centerYAnchor {
     return [[ABLayoutYAxisAnchor alloc] initWithItem:self attribute:NSLayoutAttributeCenterY];
 }
 
-- (ABLayoutYAxisAnchor *)firstBaselineAnchor {
+- (ABLayoutYAxisAnchor *)ab_firstBaselineAnchor {
     return [[ABLayoutYAxisAnchor alloc] initWithItem:self attribute:NSLayoutAttributeFirstBaseline];
 }
 
-- (ABLayoutYAxisAnchor *)lastBaselineAnchor {
+- (ABLayoutYAxisAnchor *)ab_lastBaselineAnchor {
     return [[ABLayoutYAxisAnchor alloc] initWithItem:self attribute:NSLayoutAttributeLastBaseline];
 }
 
