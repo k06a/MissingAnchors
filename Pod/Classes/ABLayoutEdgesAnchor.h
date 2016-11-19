@@ -40,6 +40,13 @@ typedef NS_OPTIONS(NSUInteger, ABLayoutEdgesAttribute) {
 - (NSArray<NSLayoutConstraint *> *)constraintsGreaterThanOrEqualToConstant:(UIEdgeInsets)c;
 - (NSArray<NSLayoutConstraint *> *)constraintsLessThanOrEqualToConstant:(UIEdgeInsets)c;
 
+/* These methods return an array of inactive constraints of the form
+ thisVariable = view + constant.
+ */
+- (NSArray<NSLayoutConstraint *> *)constraintsEqualToView:(UIView *)view constant:(UIEdgeInsets)c;
+- (NSArray<NSLayoutConstraint *> *)constraintsGreaterThanOrEqualToView:(UIView *)view constant:(UIEdgeInsets)c;
+- (NSArray<NSLayoutConstraint *> *)constraintsLessThanOrEqualToView:(UIView *)view constant:(UIEdgeInsets)c;
+
 @end
 
 NS_ASSUME_NONNULL_END

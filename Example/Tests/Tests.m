@@ -40,8 +40,10 @@
     UIImageView *imageView2 = [[UIImageView alloc] init];
     [self.view addSubview:imageView2];
     imageView2.translatesAutoresizingMaskIntoConstraints = NO;
-    @[[imageView2.widthAnchor constraintEqualToConstant:50],
-      [imageView2.heightAnchor constraintEqualToConstant:60]].active = YES;
+    @[
+       [imageView2.widthAnchor constraintEqualToConstant:50],
+       [imageView2.heightAnchor constraintEqualToConstant:60],
+    ].active = YES;
     
     [self.view layoutIfNeeded];
     XCTAssert(CGSizeEqualToSize(imageView1.bounds.size, imageView2.bounds.size), "Frame check");
@@ -60,10 +62,12 @@
     UIImageView *imageView2 = [[UIImageView alloc] init];
     [self.view addSubview:imageView2];
     imageView2.translatesAutoresizingMaskIntoConstraints = NO;
-    @[[imageView2.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:10],
-      [imageView2.leftAnchor constraintEqualToAnchor:self.view.leftAnchor constant:20],
-      [imageView2.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-30],
-      [imageView2.rightAnchor constraintEqualToAnchor:self.view.rightAnchor constant:-40]].active = YES;
+    @[
+       [imageView2.topAnchor constraintEqualToAnchor:self.view.topAnchor constant:10],
+       [imageView2.leftAnchor constraintEqualToAnchor:self.view.leftAnchor constant:20],
+       [imageView2.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-30],
+       [imageView2.rightAnchor constraintEqualToAnchor:self.view.rightAnchor constant:-40],
+    ].active = YES;
     
     [self.view layoutIfNeeded];
     XCTAssert(CGRectEqualToRect(imageView1.frame, imageView2.frame), "Frame check");
