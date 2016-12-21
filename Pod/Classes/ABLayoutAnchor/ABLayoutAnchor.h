@@ -30,15 +30,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 /* These methods return an inactive constraint of the form thisAnchor = otherAnchor.
  */
-- (NSLayoutConstraint *)constraintEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor;
-- (NSLayoutConstraint *)constraintGreaterThanOrEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor;
-- (NSLayoutConstraint *)constraintLessThanOrEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor;
+- (NSLayoutConstraint *)constraintEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor NS_SWIFT_NAME( constraint(equalTo:) );
+- (NSLayoutConstraint *)constraintGreaterThanOrEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor NS_SWIFT_NAME( constraint(greaterThanOrEqualTo:) );
+- (NSLayoutConstraint *)constraintLessThanOrEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor NS_SWIFT_NAME( constraint(lessThanOrEqualTo:) );
 
 /* These methods return an inactive constraint of the form thisAnchor = otherAnchor + constant.
  */
-- (NSLayoutConstraint *)constraintEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor constant:(CGFloat)c;
-- (NSLayoutConstraint *)constraintGreaterThanOrEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor constant:(CGFloat)c;
-- (NSLayoutConstraint *)constraintLessThanOrEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor constant:(CGFloat)c;
+- (NSLayoutConstraint *)constraintEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor constant:(CGFloat)c NS_SWIFT_NAME( constraint(equalTo:constant:) );
+- (NSLayoutConstraint *)constraintGreaterThanOrEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor constant:(CGFloat)c NS_SWIFT_NAME( constraint(greaterThanOrEqualTo:constant:) );
+- (NSLayoutConstraint *)constraintLessThanOrEqualToAnchor:(ABLayoutAnchor<AnchorType> *)anchor constant:(CGFloat)c NS_SWIFT_NAME( constraint(lessThanOrEqualTo:constant:) );
 
 @end
 
@@ -64,23 +64,23 @@ NS_ASSUME_NONNULL_BEGIN
 /* These methods return an inactive constraint of the form
  thisVariable = constant.
  */
-- (NSLayoutConstraint *)constraintEqualToConstant:(CGFloat)c;
-- (NSLayoutConstraint *)constraintGreaterThanOrEqualToConstant:(CGFloat)c;
-- (NSLayoutConstraint *)constraintLessThanOrEqualToConstant:(CGFloat)c;
+- (NSLayoutConstraint *)constraintEqualToConstant:(CGFloat)c NS_SWIFT_NAME( constraint(equalToConstant:) );
+- (NSLayoutConstraint *)constraintGreaterThanOrEqualToConstant:(CGFloat)c NS_SWIFT_NAME( constraint(greaterThanOrEqualeToConstant:) );
+- (NSLayoutConstraint *)constraintLessThanOrEqualToConstant:(CGFloat)c NS_SWIFT_NAME( constraint(lessThanOrEqualToConstant:) );
 
 /* These methods return an inactive constraint of the form
  thisAnchor = otherAnchor * multiplier.
  */
-- (NSLayoutConstraint *)constraintEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m;
-- (NSLayoutConstraint *)constraintGreaterThanOrEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m;
-- (NSLayoutConstraint *)constraintLessThanOrEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m;
+- (NSLayoutConstraint *)constraintEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m NS_SWIFT_NAME( constraint(equalTo:multiplier:) );
+- (NSLayoutConstraint *)constraintGreaterThanOrEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m NS_SWIFT_NAME( constraint(greaterThanOrEqualTo:multiplier:) );
+- (NSLayoutConstraint *)constraintLessThanOrEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m NS_SWIFT_NAME( constraint(lessThanOrEqualTo:multiplier:) );
 
 /* These methods return an inactive constraint of the form
  thisAnchor = otherAnchor * multiplier + constant.
  */
-- (NSLayoutConstraint *)constraintEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m constant:(CGFloat)c;
-- (NSLayoutConstraint *)constraintGreaterThanOrEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m constant:(CGFloat)c;
-- (NSLayoutConstraint *)constraintLessThanOrEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m constant:(CGFloat)c;
+- (NSLayoutConstraint *)constraintEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m constant:(CGFloat)c NS_SWIFT_NAME( constraint(equalTo:multiplier:constant:) );
+- (NSLayoutConstraint *)constraintGreaterThanOrEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m constant:(CGFloat)c NS_SWIFT_NAME( constraint(greaterThanOrEqualTo:multiplier:constant:) );
+- (NSLayoutConstraint *)constraintLessThanOrEqualToAnchor:(ABLayoutDimension *)anchor multiplier:(CGFloat)m constant:(CGFloat)c NS_SWIFT_NAME( constraint(lessThanOrEqualTo:multiplier:constant:) );
 
 @end
 
