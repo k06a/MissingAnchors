@@ -65,7 +65,7 @@ NS_ASSUME_NONNULL_BEGIN
  thisVariable = constant.
  */
 - (NSLayoutConstraint *)constraintEqualToConstant:(CGFloat)c NS_SWIFT_NAME( constraint(equalToConstant:) );
-- (NSLayoutConstraint *)constraintGreaterThanOrEqualToConstant:(CGFloat)c NS_SWIFT_NAME( constraint(greaterThanOrEqualeToConstant:) );
+- (NSLayoutConstraint *)constraintGreaterThanOrEqualToConstant:(CGFloat)c NS_SWIFT_NAME( constraint(greaterThanOrEqualToConstant:) );
 - (NSLayoutConstraint *)constraintLessThanOrEqualToConstant:(CGFloat)c NS_SWIFT_NAME( constraint(lessThanOrEqualToConstant:) );
 
 /* These methods return an inactive constraint of the form
