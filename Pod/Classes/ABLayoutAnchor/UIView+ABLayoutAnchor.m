@@ -15,7 +15,7 @@
 @implementation UIView (ABLayoutAnchor)
 
 + (void)load {
-    if (![UIView instanceMethodForSelector:@selector(topAnchor)]) {
+    if (![UIView resolveInstanceMethod:@selector(topAnchor)]) {
         SEL selectors[] = {
             @selector(ab_leadingAnchor),
             @selector(ab_trailingAnchor),
