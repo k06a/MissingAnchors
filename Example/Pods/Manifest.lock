@@ -1,8 +1,8 @@
 PODS:
-  - MissingAnchors (0.5.2):
-    - MissingAnchors/MissingAnchors (= 0.5.2)
-  - MissingAnchors/MissingAnchors (0.5.2)
-  - MissingAnchors/NSLayoutAnchor (0.5.2)
+  - MissingAnchors (0.5.3):
+    - MissingAnchors/MissingAnchors (= 0.5.3)
+  - MissingAnchors/MissingAnchors (0.5.3)
+  - MissingAnchors/NSLayoutAnchor (0.5.3)
 
 DEPENDENCIES:
   - MissingAnchors (from `../`)
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MissingAnchors: c1be56f760371336c0f4c7c1f54421be48627ac4
+  MissingAnchors: 82db38afff02061d9125ee49f35ba712b62e7b03
 
 PODFILE CHECKSUM: 047e48342d17d19518bd8e856234f4c73f174d00
 
