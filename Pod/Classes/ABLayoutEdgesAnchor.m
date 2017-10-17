@@ -95,6 +95,17 @@ static NSArray *ArrayWithoutNulls(NSArray *arr) {
     return [self constraintsLessThanOrEqualToView:self.item.superview constant:c];
 }
 
+- (NSArray<NSLayoutConstraint *> *)constraintsEqualToSafeAreaConstant:(UIEdgeInsets)c {
+    return [self constraintsEqualToViewSafeArea:self.item.superview constant:c];
+}
+
+- (NSArray<NSLayoutConstraint *> *)constraintsGreaterThanOrEqualToSafeAreaConstant:(UIEdgeInsets)c {
+    return [self constraintsGreaterThanOrEqualToViewSafeArea:self.item.superview constant:c];
+}
+
+- (NSArray<NSLayoutConstraint *> *)constraintsLessThanOrEqualToSafeAreaConstant:(UIEdgeInsets)c {
+    return [self constraintsLessThanOrEqualToViewSafeArea:self.item.superview constant:c];
+}
 
 /* These methods return an array of inactive constraints of the form
  thisVariable = view + constant.
@@ -126,6 +137,36 @@ static NSArray *ArrayWithoutNulls(NSArray *arr) {
         (self.attribute & ABLayoutEdgesAttributeBottom) ? [self.item.bottomAnchor constraintLessThanOrEqualToAnchor:view.bottomAnchor constant:-c.bottom] : [NSNull null],
         (self.attribute & ABLayoutEdgesAttributeLeading) ? [self.item.leadingAnchor constraintGreaterThanOrEqualToAnchor:view.leadingAnchor constant:c.left] : [NSNull null],
         (self.attribute & ABLayoutEdgesAttributeTrailing) ? [self.item.trailingAnchor constraintLessThanOrEqualToAnchor:view.trailingAnchor constant:-c.right] : [NSNull null],
+    ]);
+}
+
+- (NSArray<NSLayoutConstraint *> *)constraintsEqualToViewSafeArea:(UIView *)view constant:(UIEdgeInsets)c {
+    [self assertSuperviewNotNil];
+    return ArrayWithoutNulls(@[
+        (self.attribute & ABLayoutEdgesAttributeTop) ? [self.item.topAnchor constraintEqualToAnchor:view.safeAreaLayoutGuide.topAnchor constant:c.top] : [NSNull null],
+        (self.attribute & ABLayoutEdgesAttributeBottom) ? [self.item.bottomAnchor constraintEqualToAnchor:view.safeAreaLayoutGuide.bottomAnchor constant:-c.bottom] : [NSNull null],
+        (self.attribute & ABLayoutEdgesAttributeLeading) ? [self.item.leadingAnchor constraintEqualToAnchor:view.safeAreaLayoutGuide.leadingAnchor constant:c.left] : [NSNull null],
+        (self.attribute & ABLayoutEdgesAttributeTrailing) ? [self.item.trailingAnchor constraintEqualToAnchor:view.safeAreaLayoutGuide.trailingAnchor constant:-c.right] : [NSNull null],
+    ]);
+}
+
+- (NSArray<NSLayoutConstraint *> *)constraintsGreaterThanOrEqualToViewSafeArea:(UIView *)view constant:(UIEdgeInsets)c {
+    [self assertSuperviewNotNil];
+    return ArrayWithoutNulls(@[
+        (self.attribute & ABLayoutEdgesAttributeTop) ? [self.item.topAnchor constraintLessThanOrEqualToAnchor:view.safeAreaLayoutGuide.topAnchor constant:c.top] : [NSNull null],
+        (self.attribute & ABLayoutEdgesAttributeBottom) ? [self.item.bottomAnchor constraintGreaterThanOrEqualToAnchor:view.safeAreaLayoutGuide.bottomAnchor constant:-c.bottom] : [NSNull null],
+        (self.attribute & ABLayoutEdgesAttributeLeading) ? [self.item.leadingAnchor constraintLessThanOrEqualToAnchor:view.safeAreaLayoutGuide.leadingAnchor constant:c.left] : [NSNull null],
+        (self.attribute & ABLayoutEdgesAttributeTrailing) ? [self.item.trailingAnchor constraintGreaterThanOrEqualToAnchor:view.safeAreaLayoutGuide.trailingAnchor constant:-c.right] : [NSNull null],
+    ]);
+}
+
+- (NSArray<NSLayoutConstraint *> *)constraintsLessThanOrEqualToViewSafeArea:(UIView *)view constant:(UIEdgeInsets)c {
+    [self assertSuperviewNotNil];
+    return ArrayWithoutNulls(@[
+        (self.attribute & ABLayoutEdgesAttributeTop) ? [self.item.topAnchor constraintGreaterThanOrEqualToAnchor:view.safeAreaLayoutGuide.topAnchor constant:c.top] : [NSNull null],
+        (self.attribute & ABLayoutEdgesAttributeBottom) ? [self.item.bottomAnchor constraintLessThanOrEqualToAnchor:view.safeAreaLayoutGuide.bottomAnchor constant:-c.bottom] : [NSNull null],
+        (self.attribute & ABLayoutEdgesAttributeLeading) ? [self.item.leadingAnchor constraintGreaterThanOrEqualToAnchor:view.safeAreaLayoutGuide.leadingAnchor constant:c.left] : [NSNull null],
+        (self.attribute & ABLayoutEdgesAttributeTrailing) ? [self.item.trailingAnchor constraintLessThanOrEqualToAnchor:view.safeAreaLayoutGuide.trailingAnchor constant:-c.right] : [NSNull null],
     ]);
 }
 

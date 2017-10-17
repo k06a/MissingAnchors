@@ -40,12 +40,20 @@ typedef NS_OPTIONS(NSUInteger, ABLayoutEdgesAttribute) {
 - (NSArray<NSLayoutConstraint *> *)constraintsGreaterThanOrEqualToConstant:(UIEdgeInsets)c NS_SWIFT_NAME( constraints(greaterThanOrEqualToConstant:) );
 - (NSArray<NSLayoutConstraint *> *)constraintsLessThanOrEqualToConstant:(UIEdgeInsets)c NS_SWIFT_NAME( constraints(lessThanOrEqualToConstant:) );
 
+- (NSArray<NSLayoutConstraint *> *)constraintsEqualToSafeAreaConstant:(UIEdgeInsets)c NS_SWIFT_NAME( constraints(equalToSafeAreaConstant:) ) API_AVAILABLE(ios(11.0),tvos(11.0));
+- (NSArray<NSLayoutConstraint *> *)constraintsGreaterThanOrEqualToSafeAreaConstant:(UIEdgeInsets)c NS_SWIFT_NAME( constraints(greaterThanOrEqualToSafeAreaConstant:) ) API_AVAILABLE(ios(11.0),tvos(11.0));
+- (NSArray<NSLayoutConstraint *> *)constraintsLessThanOrEqualToSafeAreaConstant:(UIEdgeInsets)c NS_SWIFT_NAME( constraints(lessThanOrEqualToConstant:) ) API_AVAILABLE(ios(11.0),tvos(11.0));
+
 /* These methods return an array of inactive constraints of the form
  thisVariable = view + constant.
  */
 - (NSArray<NSLayoutConstraint *> *)constraintsEqualToView:(UIView *)view constant:(UIEdgeInsets)c NS_SWIFT_NAME( constraints(equalToView:constant:) );
 - (NSArray<NSLayoutConstraint *> *)constraintsGreaterThanOrEqualToView:(UIView *)view constant:(UIEdgeInsets)c NS_SWIFT_NAME( constraints(greaterThanOrEqualToView:constant:) );
 - (NSArray<NSLayoutConstraint *> *)constraintsLessThanOrEqualToView:(UIView *)view constant:(UIEdgeInsets)c NS_SWIFT_NAME( constraints(lessThanOrEqualToView:constant:) );
+
+- (NSArray<NSLayoutConstraint *> *)constraintsEqualToViewSafeArea:(UIView *)view constant:(UIEdgeInsets)c NS_SWIFT_NAME( constraints(equalToViewSafeArea:constant:) ) API_AVAILABLE(ios(11.0),tvos(11.0));
+- (NSArray<NSLayoutConstraint *> *)constraintsGreaterThanOrEqualToViewSafeArea:(UIView *)view constant:(UIEdgeInsets)c NS_SWIFT_NAME( constraints(greaterThanOrEqualToViewSafeArea:constant:) ) API_AVAILABLE(ios(11.0),tvos(11.0));
+- (NSArray<NSLayoutConstraint *> *)constraintsLessThanOrEqualToViewSafeArea:(UIView *)view constant:(UIEdgeInsets)c NS_SWIFT_NAME( constraints(lessThanOrEqualToViewSafeArea:constant:) ) API_AVAILABLE(ios(11.0),tvos(11.0));
 
 @end
 
