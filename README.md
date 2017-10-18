@@ -10,7 +10,7 @@ Backport of Apple NSLayoutAnchor API to iOS7 and some missings like `sizeAnchor`
 
 ## Usage
 
-###Backported all default anchor methods:
+### Backported all default anchor methods:
 - `view.leadingAnchor`
 - `view.trailingAnchor`
 - `view.leftAnchor`
@@ -24,7 +24,7 @@ Backport of Apple NSLayoutAnchor API to iOS7 and some missings like `sizeAnchor`
 - `view.firstBaselineAnchor`
 - `view.lastBaselineAnchor`
 
-###Additional implemented anchors:
+### Additional implemented anchors:
 - `view.sizeAnchor`
 - `view.edgesAnchor`
 
@@ -50,7 +50,7 @@ Usage example:
 [view3.edgesAnchor.withoutTopAnchor constraintsEqualToConstant:UIEdgeInsetsMake(0, 20, 30, 40)].active = YES;
 ```
 
-###Modern active property:
+### Modern active property:
 ```objective-c
 #import <MissingAnchors/MissingAnchors.h>
 
@@ -63,8 +63,6 @@ Usage example:
    [view1.rightAnchor constraintEqualToAnchor:self.view.rightAnchor constant:-40],
 ].active = YES;
 ```
-
-## Requirements
 
 ## Installation
 
